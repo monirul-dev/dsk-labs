@@ -1,23 +1,55 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 
 export default function Header(){
     return(
-        <header className="fixed-top d-flex align-items-center">
-        <div className="container d-flex align-items-center">
+        <header className={`${classes.page_header} fixed-top d-flex align-items-center`}>
+        <div className={`container d-flex align-items-center`}>
     
-          <h1 className="logo me-auto"><a href="index.html">Sailor</a></h1>
-          <nav id="navbar" className="navbar">
-            <ul>
-              <li><Link to="/" className="active">Home</Link></li>
-              <li><Link to="/about" className="active">About</Link></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-    
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="index.html" className="getstarted">Get Started</a></li>
+          <h1 className={`${classes.logo} me-auto`}>
+            <Link to="/" className={`${classes.header_link}`}>Sailor</Link>
+            </h1>
+          <nav className={`${classes.navbar} navbar`}>
+            <ul className={`${classes.navbar_ul}`}>
+              <li className={`${classes.navbar_li}`}>
+                <NavLink to="/" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.active}` : `${classes.navbar_link}`}>
+                    Home</NavLink>
+              </li>
+              <li className={`${classes.navbar_li} ${classes.dropdown} dropdown`}>
+                <a href="/" className={`${classes.navbar_link}`}><span>About</span> <i className="bi bi-chevron-down"></i></a>
+            <ul className={`${classes.dropdown_ul}`}>
+              <li className={`${classes.dropdown_li}`}><a href="about.html">About</a></li>
+              <li className={`${classes.dropdown_li}`}><a href="team.html">Team</a></li>
+              <li className={`${classes.dropdown_li}`}><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+          </li>
+              <li className={`${classes.navbar_li}`}>
+                <NavLink to="/services" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.active}` : `${classes.navbar_link}`}>
+                    Services</NavLink>
+              </li>
+              <li className={`${classes.navbar_li}`}>
+                <NavLink to="/portfolio" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.active}` : `${classes.navbar_link}`}>
+                    Portfolio</NavLink>
+              </li>
+              <li className={`${classes.navbar_li}`}>
+                <NavLink to="/pricing" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.active}` : `${classes.navbar_link}`}>
+                    Pricing</NavLink>
+              </li>
+              <li className={`${classes.navbar_li}`}>
+                <NavLink to="/blog" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.active}` : `${classes.navbar_link}`}>
+                    Blog</NavLink>
+              </li>
+              <li className={`${classes.navbar_li}`}>
+                <NavLink to="/contact" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.active}` : `${classes.navbar_link}`}>
+                    Contact</NavLink>
+              </li>
+              <li className={`${classes.navbar_li}`}><Link to="/contact" className={`${classes.getstarted}`}>Get Started</Link></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
