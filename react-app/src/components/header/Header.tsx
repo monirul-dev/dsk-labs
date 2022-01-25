@@ -18,10 +18,22 @@ export default function Header(){
               </li>
               <li className={`${classes.navbar_li} ${classes.dropdown} dropdown`}>
                 <a href="/" className={`${classes.navbar_link}`}><span>About</span> <i className="bi bi-chevron-down"></i></a>
-            <ul className={`${classes.dropdown_ul}`}>
-              <li className={`${classes.dropdown_li}`}><a href="about.html">About</a></li>
-              <li className={`${classes.dropdown_li}`}><a href="team.html">Team</a></li>
-              <li className={`${classes.dropdown_li}`}><a href="testimonials.html">Testimonials</a></li>
+            <ul className={`${classes.navbar_ul} ${classes.dropdown_ul}`}>
+              <li className={`${classes.navbar_li} ${classes.dropdown_li}`}>
+                <NavLink to="/about" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.dropdown_link} ${classes.active}` : `${classes.navbar_link} ${classes.dropdown_link}`}>
+                    About</NavLink>
+                </li>
+              <li className={`${classes.navbar_li} ${classes.dropdown_li}`}>
+              <NavLink to="/team" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.dropdown_link} ${classes.active}` : `${classes.navbar_link} ${classes.dropdown_link}`}>
+                    Team</NavLink>
+                </li>
+              <li className={`${classes.navbar_li} ${classes.dropdown_li}`}>
+              <NavLink to="/testimonials" className={
+                  ({ isActive }) => isActive ? `${classes.navbar_link} ${classes.dropdown_link} ${classes.active}` : `${classes.navbar_link} ${classes.dropdown_link}`}>
+                    Testimonials</NavLink>
+                </li>
             </ul>
           </li>
               <li className={`${classes.navbar_li}`}>
@@ -51,7 +63,7 @@ export default function Header(){
               </li>
               <li className={`${classes.navbar_li}`}><Link to="/contact" className={`${classes.getstarted}`}>Get Started</Link></li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            <i className={`bi bi-list ${classes.mobile_nav_toggle}`}></i>
           </nav>
         </div>
       </header>
