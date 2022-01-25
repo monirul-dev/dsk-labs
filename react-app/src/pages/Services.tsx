@@ -1,13 +1,13 @@
 import Breadcrumbs from "../components/breadcrumbs/Breadcrumbs";
-import ServiceItems from "../components/serviceitems/ServiceItems";
-import FeatureItems from "../components/featureitems/FeatureItems";
+import ServiceList from "../components/servicelist/ServiceList";
+import Features from "../components/features/Features";
 
 export default function Services(){
     return(
-        <div>
+        <>
             <Breadcrumbs>Services</Breadcrumbs>
-            <ServiceItems />
-            <FeatureItems />
-        </div>
+            <ServiceList />
+            <Features />
+        </>
     );
 }

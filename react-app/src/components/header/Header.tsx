@@ -4,7 +4,7 @@ import classes from "./Header.module.css";
 export default function Header(){
     return(
         <header className={`${classes.page_header} fixed-top d-flex align-items-center`}>
-        <div className={`container d-flex align-items-center`}>
+        <div className="container d-flex align-items-center">
     
           <h1 className={`${classes.logo} me-auto`}>
             <Link to="/" className={`${classes.header_link}`}>Sailor</Link>

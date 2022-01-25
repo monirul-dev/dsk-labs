@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features {
+  overflow: hidden;
+}
+.nav_tabs {
+  border: 0;
+}
+.nav_link {
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #556270 !important;
+  border-radius: 0 !important;
+  border-right: 2px solid white !important;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.nav_link:hover {
+  color: #d9232d !important;
+  border-color: #dee2e6 !important;
+}
+
+.details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #556270;
+}
+.details p {
+  color: #777777;
+}
+.details p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .nav_link {
+    border: 0;
+    padding: 15px;
+  }
+}
