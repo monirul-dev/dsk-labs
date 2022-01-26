@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about_content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.about_content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+.about_content ul {
+  list-style: none;
+  padding: 0;
+}
+.about_content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+.about_content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #d9232d;
+}
+.about_content p:last-child {
+  margin-bottom: 0;
+}

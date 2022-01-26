@@ -1,10 +1,12 @@
+import classes from "./PortfolioItems.module.css";
+
 export default function PortfolioItems() {
   return (
     <section className="portfolio">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
+            <ul className={classes.portfolio_flters}>
               <li data-filter="*" className="filter-active">
                 All
               </li>
@@ -16,17 +18,19 @@ export default function PortfolioItems() {
         </div>
 
         <div className="row portfolio-container">
-          <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div className="portfolio-wrap">
+          <div
+            className={`col-lg-4 col-md-6 ${classes.portfolio_item} filter-app`}
+          >
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-1.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>App 1</h4>
                 <p>App</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-1.jpg"
                     data-gallery="portfolioGallery"
@@ -49,16 +53,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-2.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>Web 3</h4>
                 <p>Web</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-2.jpg"
                     data-gallery="portfolioGallery"
@@ -81,16 +85,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-3.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>App 2</h4>
                 <p>App</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-3.jpg"
                     data-gallery="portfolioGallery"
@@ -113,16 +117,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-4.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>Card 2</h4>
                 <p>Card</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-4.jpg"
                     data-gallery="portfolioGallery"
@@ -145,16 +149,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-5.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>Web 2</h4>
                 <p>Web</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-5.jpg"
                     data-gallery="portfolioGallery"
@@ -177,16 +181,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-6.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>App 3</h4>
                 <p>App</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-6.jpg"
                     data-gallery="portfolioGallery"
@@ -209,16 +213,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-7.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>Card 1</h4>
                 <p>Card</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-7.jpg"
                     data-gallery="portfolioGallery"
@@ -241,16 +245,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-8.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>Card 3</h4>
                 <p>Card</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-8.jpg"
                     data-gallery="portfolioGallery"
@@ -273,16 +277,16 @@ export default function PortfolioItems() {
           </div>
 
           <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div className="portfolio-wrap">
+            <div className={classes.portfolio_wrap}>
               <img
                 src="images/portfolio/portfolio-9.jpg"
                 className="img-fluid"
                 alt=""
               />
-              <div className="portfolio-info">
+              <div className={classes.portfolio_info}>
                 <h4>Web 3</h4>
                 <p>Web</p>
-                <div className="portfolio-links">
+                <div className={classes.portfolio_links}>
                   <a
                     href="images/portfolio/portfolio-9.jpg"
                     data-gallery="portfolioGallery"
