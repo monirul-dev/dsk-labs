@@ -1,3 +1,5 @@
+import classes from "./ContactInfo.module.css";
+
 export default function ContactInfo() {
   return (
     <section className="contact">
@@ -14,20 +16,20 @@ export default function ContactInfo() {
 
         <div className="row mt-5">
           <div className="col-lg-4">
-            <div className="info">
-              <div className="address">
+            <div className={classes.info}>
+              <div className={classes.address}>
                 <i className="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
                 <p>A108 Adam Street, New York, NY 535022</p>
               </div>
 
-              <div className="email">
+              <div className={classes.email}>
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>info@example.com</p>
               </div>
 
-              <div className="phone">
+              <div className={classes.phone}>
                 <i className="bi bi-phone"></i>
                 <h4>Call:</h4>
                 <p>+1 5589 55488 55s</p>
@@ -36,7 +38,7 @@ export default function ContactInfo() {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form className="php-email-form">
+            <form className={classes.email_form}>
               <div className="row">
                 <div className="col-md-6 form-group">
                   <input
@@ -71,17 +73,18 @@ export default function ContactInfo() {
                   className="form-control"
                   name="message"
                   placeholder="Message"
+                  rows={5}
                 ></textarea>
               </div>
               <div className="my-3">
-                <div className="loading">Loading</div>
-                <div className="error-message"></div>
-                <div className="sent-message">
+                <div className={classes.loading}>Loading</div>
+                <div className={classes.error_message}></div>
+                <div className={classes.sent_message}>
                   Your message has been sent. Thank you!
                 </div>
               </div>
               <div className="text-center">
-                <button type="submit">Send Message</button>
+                <button type="button">Send Message</button>
               </div>
             </form>
           </div>

@@ -8,7 +8,15 @@ export default function About() {
     <>
       <Breadcrumbs>About</Breadcrumbs>
       <AboutInfo />
-      <TeamMembers />
+      <section className="team section-bg">
+        <div className="container">
+          <div className="section-title">
+            <h2>Team</h2>
+            <p>Our Hardowrking Team</p>
+          </div>
+          <TeamMembers />
+        </div>
+      </section>
       <Skills />
     </>
   );

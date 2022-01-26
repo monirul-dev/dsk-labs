@@ -1,14 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Portfolio from './pages/Portfolio';
-import Pricing from './pages/Pricing';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Layout from "./components/Layout";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing";
+import Services from "./pages/Services";
+import Team from "./pages/Team";
+import Testimonials from "./pages/Testimonials";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="team" element={<Team />} />
+          <Route path="testimonials" element={<Testimonials />} />
         </Routes>
       </Layout>
     </Router>

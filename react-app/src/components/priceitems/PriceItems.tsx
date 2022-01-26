@@ -3,7 +3,7 @@ import classes from "./PriceItems.module.css";
 
 export default function PriceItems() {
   return (
-    <section className="pricing">
+    <section className={classes.pricing}>
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-6">
