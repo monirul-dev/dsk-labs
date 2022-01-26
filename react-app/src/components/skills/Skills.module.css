@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Our Skills
+--------------------------------------------------------------*/
+.skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  color: #556270;
+}
+.skill_val {
+  float: right;
+  font-style: normal;
+}

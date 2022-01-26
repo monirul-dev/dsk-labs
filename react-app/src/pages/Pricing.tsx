@@ -1,13 +1,13 @@
 import Breadcrumbs from "../components/breadcrumbs/Breadcrumbs";
 import Faq from "../components/faq/Faq";
-import PriceList from "../components/pricelist/PriceList";
+import PriceItems from "../components/priceitems/PriceItems";
 
-export default function Pricing(){
-    return(
-        <>
-            <Breadcrumbs>Pricing</Breadcrumbs>
-            <PriceList />
-            <Faq />
-        </>
-    );
+export default function Pricing() {
+  return (
+    <>
+      <Breadcrumbs>Pricing</Breadcrumbs>
+      <PriceItems />
+      <Faq />
+    </>
+  );
 }

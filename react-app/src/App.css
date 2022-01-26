@@ -6,7 +6,7 @@ section {
   overflow: hidden;
 }
 
-.section-bg .icon-box {
+.section-bg {
   background-color: #f8f9fa;
 }
 
@@ -42,14 +42,16 @@ section {
   color: #556270;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #d9232d !important;
   border-color: #d9232d !important;
   background: #fff !important;
 }
 
 @media (max-width: 992px) {
-  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
     color: #fff !important;
     background: #d9232d !important;
   }
@@ -58,4 +60,20 @@ section {
 .tab-pane.active {
   -webkit-animation: fadeIn 0.5s ease-out;
   animation: fadeIn 0.5s ease-out;
+}
+
+.skills .progress {
+  height: 10px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress-bar-wrap {
+  background: #edeff1;
+}
+.skills .progress-bar {
+  height: 10px;
+  transition: 0.9s;
+  background-color: #6b7b8d;
 }

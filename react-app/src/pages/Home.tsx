@@ -1,9 +1,9 @@
-import ServiceList from "../components/servicelist/ServiceList";
+import ServiceItems from "../components/serviceitems/ServiceItems";
 
 export default function Home() {
-    return(
-        <>
-            <ServiceList />
-        </>
-    );
+  return (
+    <>
+      <ServiceItems />
+    </>
+  );
 }
