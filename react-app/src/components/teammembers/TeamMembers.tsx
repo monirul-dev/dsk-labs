@@ -13,16 +13,16 @@ export default function TeamMembers() {
             <p>Explicabo voluptatem mollitia et repellat</p>
             <div className={`${classes.member_social}`}>
               <a href="twiter.com">
-                <i className="bi bi-twitter"></i>
+                <i className="bx bxl-twitter"></i>
               </a>
               <a href="facebook.com">
-                <i className="bi bi-facebook"></i>
+                <i className="bx bxl-facebook"></i>
               </a>
               <a href="instagram.com">
-                <i className="bi bi-instagram"></i>
+                <i className="bx bxl-instagram"></i>
               </a>
               <a href="linkedin.com">
-                <i className="bi bi-linkedin"></i>
+                <i className="bx bxl-linkedin"></i>
               </a>
             </div>
           </div>
@@ -40,16 +40,16 @@ export default function TeamMembers() {
             <p>Aut maiores voluptates amet et quis</p>
             <div className={`${classes.member_social}`}>
               <a href="twitter.com">
-                <i className="bi bi-twitter"></i>
+                <i className="bx bxl-twitter"></i>
               </a>
               <a href="linkedin">
-                <i className="bi bi-facebook"></i>
+                <i className="bx bxl-facebook"></i>
               </a>
               <a href="instagram.com">
-                <i className="bi bi-instagram"></i>
+                <i className="bx bxl-instagram"></i>
               </a>
               <a href="linkedin.com">
-                <i className="bi bi-linkedin"></i>
+                <i className="bx bxl-linkedin"></i>
               </a>
             </div>
           </div>
@@ -67,16 +67,16 @@ export default function TeamMembers() {
             <p>Quisquam facilis cum velit laborum corrupti</p>
             <div className={`${classes.member_social}`}>
               <a href="twitter.com">
-                <i className="bi bi-twitter"></i>
+                <i className="bx bxl-twitter"></i>
               </a>
               <a href="facebook.com">
-                <i className="bi bi-facebook"></i>
+                <i className="bx bxl-facebook"></i>
               </a>
               <a href="instagram.com">
-                <i className="bi bi-instagram"></i>
+                <i className="bx bxl-instagram"></i>
               </a>
               <a href="linkedin.com">
-                <i className="bi bi-linkedin"></i>
+                <i className="bx bxl-linkedin"></i>
               </a>
             </div>
           </div>
@@ -94,16 +94,16 @@ export default function TeamMembers() {
             <p>Dolorum tempora officiis odit laborum officiis</p>
             <div className={`${classes.member_social}`}>
               <a href="twitter.com">
-                <i className="bi bi-twitter"></i>
+                <i className="bx bxl-twitter"></i>
               </a>
               <a href="facebook.com">
-                <i className="bi bi-facebook"></i>
+                <i className="bx bxl-facebook"></i>
               </a>
               <a href="instagram.com">
-                <i className="bi bi-instagram"></i>
+                <i className="bx bxl-instagram"></i>
               </a>
               <a href="linkedin.com">
-                <i className="bi bi-linkedin"></i>
+                <i className="bx bxl-linkedin"></i>
               </a>
             </div>
           </div>
