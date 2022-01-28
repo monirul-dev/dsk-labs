@@ -1,6 +1,3 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "boxicons/css/boxicons.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
