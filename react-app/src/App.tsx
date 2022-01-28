@@ -1,12 +1,8 @@
-import "animate.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "boxicons/css/boxicons.min.css";
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useRef } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./App.css";
 import Layout from "./components/Layout";
-import ScrollToTop from "./components/shared/ScrollToTop";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -18,23 +14,33 @@ import Team from "./pages/Team";
 import Testimonials from "./pages/Testimonials";
 
 function App() {
+  const location = useLocation();
+  const nodeRef = useRef(null);
   return (
-    <Router>
-      <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="pricing" element={<Pricing />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="team" element={<Team />} />
-          <Route path="testimonials" element={<Testimonials />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout>
+      <TransitionGroup>
+        <CSSTransition
+          key={location.key}
+          nodeRef={nodeRef}
+          classNames="fade"
+          timeout={950}
+        >
+          <div ref={nodeRef}>
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="services" element={<Services />} />
+              <Route path="portfolio" element={<Portfolio />} />
+              <Route path="pricing" element={<Pricing />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="team" element={<Team />} />
+              <Route path="testimonials" element={<Testimonials />} />
+            </Routes>
+          </div>
+        </CSSTransition>
+      </TransitionGroup>
+    </Layout>
   );
 }
 
