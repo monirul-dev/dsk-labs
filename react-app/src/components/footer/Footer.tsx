@@ -1,25 +1,18 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useFetch from "../../hooks/useFetch";
 import classes from "./Footer.module.css";
+
+export interface IContact {
+  addressLine1: string;
+  addressLine2: string;
+  phone: string;
+  email: string;
+};
+
 export default function Footer() {
-  const [contact, setContact] = useState({
-    addressLine1: "A108 Adam Street",
-    addressLine2: "NY 535022, USA",
-    phone: "+1 5589 55488 55",
-    email: "info@example.com",
-  });
-  const getLocalJson = () => {
-    fetch("/data/contact.json")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setContact(data);
-      });
-  };
-  useEffect(() => {
-    getLocalJson();
-  }, []);
+
+  const contact = useFetch<IContact>('./data/contact.json');
+
   return (
     <footer className={classes.footer}>
       <div className={classes.footer_top}>
@@ -29,11 +22,11 @@ export default function Footer() {
               <div className={classes.footer_info}>
                 <h3>Sailor</h3>
                 <p>
-                  {contact.addressLine1} <br />
-                  {contact.addressLine2} <br />
+                  {contact?.addressLine1} <br />
+                  {contact?.addressLine2} <br />
                   <br />
-                  <strong>Phone:</strong> {contact.phone} <br />
-                  <strong>Email:</strong> {contact.email} <br />
+                  <strong>Phone:</strong> {contact?.phone} <br />
+                  <strong>Email:</strong> {contact?.email} <br />
                 </p>
                 <div className={`${classes.social_links} mt-3`}>
                   <a href="twitter.com" className="twitter">
