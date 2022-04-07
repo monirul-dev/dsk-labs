@@ -11,7 +11,12 @@ interface IContact {
 
 export default function Footer() {
 
-  const contact = useFetch<IContact>('./data/contact.json');
+  const contact = useFetch<IContact>('./data/contact.json', {
+    addressLine1: '',
+    addressLine2: '',
+    phone: '',
+    email: ''
+  });
 
   return (
     <footer className={classes.footer}>
@@ -22,11 +27,11 @@ export default function Footer() {
               <div className={classes.footer_info}>
                 <h3>Sailor</h3>
                 <p>
-                  {contact?.addressLine1} <br />
-                  {contact?.addressLine2} <br />
+                  {contact.addressLine1} <br />
+                  {contact.addressLine2} <br />
                   <br />
-                  <strong>Phone:</strong> {contact?.phone} <br />
-                  <strong>Email:</strong> {contact?.email} <br />
+                  <strong>Phone:</strong> {contact.phone} <br />
+                  <strong>Email:</strong> {contact.email} <br />
                 </p>
                 <div className={`${classes.social_links} mt-3`}>
                   <a href="twitter.com" className="twitter">

@@ -12,7 +12,11 @@ interface IServices extends Array<IService> { }
 
 export default function ServiceItems() {
 
-  const services = useFetch<IServices>('./data/services.json');
+  const services = useFetch<IServices>('./data/services.json', [{
+    iconClassName: '',
+    heading: '',
+    descrip: '',
+  }]);
 
   return (
     <section className="services">
