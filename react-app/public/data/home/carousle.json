@@ -1,0 +1,17 @@
+[
+  {
+    "header": "Welcome to Sailor",
+    "description": "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.",
+    "imagePath": "url(images/slide/slide-1.jpg)"
+  },
+  {
+    "header": "Welcome to Sailor",
+    "description": "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.",
+    "imagePath": "url(images/slide/slide-2.jpg)"
+  },
+  {
+    "header": "Welcome to Sailor1",
+    "description": "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.",
+    "imagePath": "url(images/slide/slide-3.jpg)"
+  }
+]
