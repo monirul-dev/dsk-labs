@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
+import data from "../../data/footer.json";
 import classes from "./Footer.module.css";
-
 export default function Footer() {
   return (
     <footer className={classes.footer}>
@@ -11,11 +11,11 @@ export default function Footer() {
               <div className={classes.footer_info}>
                 <h3>Sailor</h3>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA <br />
+                  {data.addressLine1} <br />
+                  {data.addressLine2} <br />
                   <br />
-                  <strong>Phone:</strong> +1 5589 55488 55 <br />
-                  <strong>Email:</strong> info@example.com <br />
+                  <strong>Phone:</strong> {data.phone} <br />
+                  <strong>Email:</strong> {data.email} <br />
                 </p>
                 <div className={`${classes.social_links} mt-3`}>
                   <a href="twitter.com" className="twitter">
