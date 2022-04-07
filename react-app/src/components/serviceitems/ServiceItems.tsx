@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
-import data from "../../data/services.json";
+import useFetch from "../../hooks/useFetch";
 import classes from "./ServiceItems.module.css";
 
+interface IService {
+  iconClassName: string;
+  heading: string;
+  descrip: string;
+};
+
+interface IServices extends Array<IService> { }
+
 export default function ServiceItems() {
+
+  const services = useFetch<IServices>('./data/services.json');
+
   return (
     <section className="services">
       <div className="container">
         <div className="row">
-          {data.map((data) => {
+          {services?.map((data) => {
             return (
               <div className="col-md-6">
                 <div className={`${classes.icon_box}`}>

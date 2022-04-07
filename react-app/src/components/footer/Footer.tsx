@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./Footer.module.css";
 
-export interface IContact {
+interface IContact {
   addressLine1: string;
   addressLine2: string;
   phone: string;
