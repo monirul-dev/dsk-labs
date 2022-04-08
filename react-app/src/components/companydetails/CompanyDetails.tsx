@@ -1,19 +1,27 @@
 import data from "../../data/home/companyDetails.json";
+import useFetch from "../../hooks/useFetch";
 import classes from "./CompanyDetails.module.css";
 
 export default function CompanyDetails() {
+  const companyDetails = useFetch("./data/home/companyDetails.json", {
+    heading: "",
+    subHeading: "",
+    description: "",
+    list: [],
+    footer: "",
+  });
   return (
     <section className="about">
       <div className="container">
         <div className={`row ${classes.about_content}`}>
           <div className="col-lg-6">
-            <h2>{data.heading}</h2>
-            <h3>{data.subHeading}</h3>
+            <h2>{companyDetails.heading}</h2>
+            <h3>{companyDetails.subHeading}</h3>
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0">
-            <p>{data.description}</p>
+            <p>{companyDetails.description}</p>
             <ul>
-              {data.list.map((item) => {
+              {companyDetails.list.map((item) => {
                 return (
                   <li>
                     <i className="bi bi-check2-all"></i> {item}

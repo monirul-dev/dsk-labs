@@ -7,15 +7,14 @@ interface IContact {
   addressLine2: string;
   phone: string;
   email: string;
-};
+}
 
 export default function Footer() {
-
-  const contact = useFetch<IContact>('./data/contact.json', {
-    addressLine1: '',
-    addressLine2: '',
-    phone: '',
-    email: ''
+  const contact = useFetch<IContact>("./data/contact.json", {
+    addressLine1: "",
+    addressLine2: "",
+    phone: "",
+    email: "",
   });
 
   return (
