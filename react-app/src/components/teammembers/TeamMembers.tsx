@@ -31,6 +31,7 @@ export default function TeamMembers() {
       },
     },
   ]);
+  console.log(team);
   return (
     <div className="row">
       {team.map((data) => {
@@ -41,20 +42,36 @@ export default function TeamMembers() {
                 <img src={data.avatar} className="img-fluid" alt="" />
               </div>
               <div className={`${classes.member_info}`}>
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat</p>
+                <h4>{data.name}</h4>
+                <span>{data.designation}</span>
+                <p>{data.description}</p>
                 <div className={`${classes.member_social}`}>
-                  <a href="twiter.com">
+                  <a
+                    href={data.social.twitter}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="bx bxl-twitter"></i>
                   </a>
-                  <a href="facebook.com">
+                  <a
+                    href={data.social.facebook}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="bx bxl-facebook"></i>
                   </a>
-                  <a href="instagram.com">
+                  <a
+                    href={data.social.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="bx bxl-instagram"></i>
                   </a>
-                  <a href="linkedin.com">
+                  <a
+                    href={data.social.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="bx bxl-linkedin"></i>
                   </a>
                 </div>

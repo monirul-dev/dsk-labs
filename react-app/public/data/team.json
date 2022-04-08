@@ -5,10 +5,10 @@
     "designation": "Chief Executive Officer",
     "description": "Explicabo voluptatem mollitia et repellat",
     "social": {
-      "twitter": "twitter.com",
-      "facebook": "facebook.com",
-      "instagram": "instagram.com",
-      "linkedin": "linkedin.com"
+      "twitter": "https://twitter.com/",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "linkedin": "https://www.linkedin.com"
     }
   },
   {
@@ -17,10 +17,10 @@
     "designation": "Product Manager",
     "description": "Aut maiores voluptates amet et quis ",
     "social": {
-      "twitter": "twitter.com",
-      "facebook": "facebook.com",
-      "instagram": "instagram.com",
-      "linkedin": "linkedin.com"
+      "twitter": "https://twitter.com/",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "linkedin": "https://www.linkedin.com"
     }
   },
   {
@@ -29,10 +29,10 @@
     "designation": "CTO",
     "description": "Quisquam facilis cum velit laborum corrupti",
     "social": {
-      "twitter": "twitter.com",
-      "facebook": "facebook.com",
-      "instagram": "instagram.com",
-      "linkedin": "linkedin.com"
+      "twitter": "https://twitter.com/",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "linkedin": "https://www.linkedin.com"
     }
   },
   {
@@ -41,10 +41,10 @@
     "designation": "Accountant",
     "description": "EDolorum tempora officiis odit laborum officiis",
     "social": {
-      "twitter": "twitter.com",
-      "facebook": "facebook.com",
-      "instagram": "instagram.com",
-      "linkedin": "linkedin.com"
+      "twitter": "https://twitter.com/",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "linkedin": "https://www.linkedin.com"
     }
   }
 ]
