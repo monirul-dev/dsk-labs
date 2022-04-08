@@ -1,7 +1,35 @@
 import { Link } from "react-router-dom";
+import useFetch from "../../hooks/useFetch";
 import classes from "./PriceItems.module.css";
 
+interface IPrice {
+  categoryName: string;
+  currency: string;
+  price: string;
+  feature: [];
+  button: string;
+  badge: {
+    state: string;
+    text: string;
+  };
+}
+
+interface IPrices extends Array<IPrice> {}
+
 export default function PriceItems() {
+  const price = useFetch<IPrices>("/data/pricing.json", [
+    {
+      categoryName: "",
+      currency: "",
+      price: "",
+      feature: [],
+      button: "",
+      badge: {
+        state: "",
+        text: "",
+      },
+    },
+  ]);
   return (
     <section className={classes.pricing}>
       <div className="container">

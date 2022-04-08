@@ -1,0 +1,20 @@
+[
+  {
+    "categoryName": "Free",
+    "currency": "$",
+    "price": "0",
+    "features": [
+      { "status": false, "name": "Aida dere" },
+      { "status": false, "name": "Nec feugiat nisl" },
+      { "status": false, "name": "Nulla at volutpat dola" },
+      { "status": true, "name": "Pharetra massa" },
+      { "status": true, "name": "Massa ultricies mi" }
+    ],
+
+    "button": "#",
+    "badge": {
+      "statue": true,
+      "text": "Advanced"
+    }
+  }
+]
