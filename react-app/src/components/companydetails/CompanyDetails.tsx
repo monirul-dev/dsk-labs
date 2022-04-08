@@ -1,4 +1,3 @@
-import data from "../../data/home/companyDetails.json";
 import useFetch from "../../hooks/useFetch";
 import classes from "./CompanyDetails.module.css";
 
@@ -30,7 +29,7 @@ export default function CompanyDetails() {
               })}
             </ul>
 
-            <p className="fst-italic">{data.footer}</p>
+            <p className="fst-italic">{companyDetails.footer}</p>
           </div>
         </div>
       </div>
