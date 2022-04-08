@@ -1,5 +1,5 @@
-import AboutInfo from "../components/aboutinfo/AboutInfo";
 import Breadcrumbs from "../components/breadcrumbs/Breadcrumbs";
+import CompanyDetails from "../components/companydetails/CompanyDetails";
 import Skills from "../components/skills/Skills";
 import TeamMembers from "../components/teammembers/TeamMembers";
 
@@ -7,7 +7,8 @@ export default function About() {
   return (
     <>
       <Breadcrumbs>About</Breadcrumbs>
-      <AboutInfo />
+      <CompanyDetails />
+
       <section className="team section-bg">
         <div className="container">
           <div className="section-title">
