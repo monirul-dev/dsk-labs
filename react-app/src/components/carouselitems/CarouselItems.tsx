@@ -1,21 +1,30 @@
 import { Carousel } from "react-bootstrap";
-import data from "../../data/home/carousle.json";
+import useFetch from "../../hooks/useFetch";
 import classes from "./CarouselItems.module.css";
 
 export default function CarouselItems() {
+  const carousel = useFetch("./data/home/carousel.json", [
+    {
+      id: "",
+      heading: "",
+      description: "",
+      imagePath: "",
+    },
+  ]);
   return (
     <section className={classes.hero}>
       <Carousel fade>
-        {data.map((data) => {
+        {carousel.map((data) => {
           return (
             <Carousel.Item
+              key={data.id}
               interval={10000}
               style={{ backgroundImage: `${data.imagePath}` }}
             >
               <div className={classes.carousel_container}>
                 <div className="container text-center">
                   <h2 className="animate__animated animate__fadeInDown">
-                    {data.header}
+                    {data.heading}
                   </h2>
                   <p className="animate__animated animate__fadeInUp">
                     {data.description}
