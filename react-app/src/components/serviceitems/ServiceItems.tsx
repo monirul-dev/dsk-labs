@@ -5,18 +5,19 @@ import classes from "./ServiceItems.module.css";
 interface IService {
   iconClassName: string;
   heading: string;
-  descrip: string;
-};
+  description: string;
+}
 
-interface IServices extends Array<IService> { }
+interface IServices extends Array<IService> {}
 
 export default function ServiceItems() {
-
-  const services = useFetch<IServices>('./data/services.json', [{
-    iconClassName: '',
-    heading: '',
-    descrip: '',
-  }]);
+  const services = useFetch<IServices>("./data/services.json", [
+    {
+      iconClassName: "",
+      heading: "",
+      description: "",
+    },
+  ]);
 
   return (
     <section className="services">
@@ -30,7 +31,7 @@ export default function ServiceItems() {
                   <h4>
                     <Link to="">{data.heading}</Link>
                   </h4>
-                  <p>{data.descrip}</p>
+                  <p>{data.description}</p>
                 </div>
               </div>
             );

@@ -30,21 +30,6 @@ export default function CompanyDetails() {
               })}
             </ul>
 
-            {/* <ul>
-              <li>
-                <i className="bi bi-check2-all"></i> Ullamco laboris nisi ut
-                aliquip ex ea commodo consequa
-              </li>
-              <li>
-                <i className="bi bi-check2-all"></i> Duis aute irure dolor in
-                reprehenderit in voluptate velit
-              </li>
-              <li>
-                <i className="bi bi-check2-all"></i> Ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in
-              </li>
-            </ul> */}
             <p className="fst-italic">{data.footer}</p>
           </div>
         </div>
