@@ -1,0 +1,38 @@
+[
+  {
+    "name": "About",
+    "status": "true"
+  },
+  {
+    "name": "Blog",
+    "status": "true"
+  },
+  {
+    "name": "Contact",
+    "status": "true"
+  },
+  {
+    "name": "Home",
+    "status": "true"
+  },
+  {
+    "name": "Portfolio",
+    "status": "true"
+  },
+  {
+    "name": "Pricing",
+    "status": "true"
+  },
+  {
+    "name": "Services",
+    "status": "true"
+  },
+  {
+    "name": "Team",
+    "status": "true"
+  },
+  {
+    "name": "Testimonials",
+    "status": "true"
+  }
+]
