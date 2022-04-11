@@ -3,17 +3,75 @@
     "categoryName": "Free",
     "currency": "$",
     "price": "0",
+    "period": "month",
     "features": [
-      { "status": false, "name": "Aida dere" },
-      { "status": false, "name": "Nec feugiat nisl" },
-      { "status": false, "name": "Nulla at volutpat dola" },
-      { "status": true, "name": "Pharetra massa" },
-      { "status": true, "name": "Massa ultricies mi" }
+      { "status": "active", "name": "Aida dere" },
+      { "status": "active", "name": "Nec feugiat nisl" },
+      { "status": "active", "name": "Nulla at volutpat dola" },
+      { "status": "inActive", "name": "Pharetra massa" },
+      { "status": "inActive", "name": "Massa ultricies mi" }
     ],
 
     "button": "#",
     "badge": {
-      "state": true,
+      "state": "inactive",
+      "text": "Pro"
+    }
+  },
+  {
+    "categoryName": "Business",
+    "currency": "$",
+    "price": "19",
+    "period": "month",
+    "features": [
+      { "status": "active", "name": "Aida dere" },
+      { "status": "active", "name": "Nec feugiat nisl" },
+      { "status": "active", "name": "Nulla at volutpat dola" },
+      { "status": "active", "name": "Pharetra massa" },
+      { "status": "inActive", "name": "Massa ultricies mi" }
+    ],
+
+    "button": "#",
+    "badge": {
+      "state": "inactive",
+      "text": ""
+    }
+  },
+  {
+    "categoryName": "Developer",
+    "currency": "$",
+    "price": "29",
+    "period": "month",
+    "features": [
+      { "status": "active", "name": "Aida dere" },
+      { "status": "active", "name": "Nec feugiat nisl" },
+      { "status": "active", "name": "Nulla at volutpat dola" },
+      { "status": "active", "name": "Pharetra massa" },
+      { "status": "afctive", "name": "Massa ultricies mi" }
+    ],
+
+    "button": "#",
+    "badge": {
+      "state": "inactive",
+      "text": ""
+    }
+  },
+  {
+    "categoryName": "Ultimate",
+    "currency": "$",
+    "price": "49",
+    "period": "month",
+    "features": [
+      { "status": "active", "name": "Aida dere" },
+      { "status": "active", "name": "Nec feugiat nisl" },
+      { "status": "active", "name": "Nulla at volutpat dola" },
+      { "status": "active", "name": "Pharetra massa" },
+      { "status": "active", "name": "Massa ultricies mi" }
+    ],
+
+    "button": "#",
+    "badge": {
+      "state": "active",
       "text": "Advanced"
     }
   }

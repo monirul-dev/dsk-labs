@@ -6,7 +6,8 @@ interface IPrice {
   categoryName: string;
   currency: string;
   price: string;
-  feature: [];
+  period: string;
+  features: { status: string; name: string }[];
   button: string;
   badge: {
     state: string;
@@ -22,7 +23,13 @@ export default function PriceItems() {
       categoryName: "",
       currency: "",
       price: "",
-      feature: [],
+      period: "",
+      features: [
+        {
+          status: "",
+          name: "",
+        },
+      ],
       button: "",
       badge: {
         state: "",
@@ -30,94 +37,44 @@ export default function PriceItems() {
       },
     },
   ]);
+  console.log(price);
   return (
     <section className={classes.pricing}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6">
-            <div className={`${classes.box}`}>
-              <h3>Free</h3>
-              <h4>
-                <sup>$</sup>0<span> / month</span>
-              </h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li className={`${classes.na}`}>Pharetra massa</li>
-                <li className={`${classes.na}`}>Massa ultricies mi</li>
-              </ul>
-              <div className={`${classes.btn_wrap}`}>
-                <Link to="#" className={`${classes.btn_buy}`}>
-                  Buy Now
-                </Link>
+          {price.map((data) => {
+            return (
+              <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                <div className={`${classes.box}`}>
+                  {data.badge.state === "active" ? (
+                    <span className={`${classes.advanced}`}>
+                      {data.badge.text}
+                    </span>
+                  ) : null}
+                  <h3>{data.categoryName}</h3>
+                  <h4>
+                    <sup>{data.currency}</sup>
+                    {data.price}
+                    <span> / {data.period}</span>
+                  </h4>
+                  <ul>
+                    {data.features.map((feature) => {
+                      return feature.status === "active" ? (
+                        <li>{feature.name}</li>
+                      ) : (
+                        <li className={`${classes.na}`}>{feature.name}</li>
+                      );
+                    })}
+                  </ul>
+                  <div className={`${classes.btn_wrap}`}>
+                    <Link to={data.button} className={`${classes.btn_buy}`}>
+                      Buy Now
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div className={`${classes.box} ${classes.featured}`}>
-              <h3>Business</h3>
-              <h4>
-                <sup>$</sup>19<span> / month</span>
-              </h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li className={`${classes.na}`}>Massa ultricies mi</li>
-              </ul>
-              <div className={`${classes.btn_wrap}`}>
-                <Link to="#" className={`${classes.btn_buy}`}>
-                  Buy Now
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div className={`${classes.box}`}>
-              <h3>Developer</h3>
-              <h4>
-                <sup>$</sup>29<span> / month</span>
-              </h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div className={`${classes.btn_wrap}`}>
-                <Link to="#" className={`${classes.btn_buy}`}>
-                  Buy Now
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div className={`${classes.box}`}>
-              <span className={`${classes.advanced}`}>Advanced</span>
-              <h3>Ultimate</h3>
-              <h4>
-                <sup>$</sup>49<span> / month</span>
-              </h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div className={`${classes.btn_wrap}`}>
-                <Link to="#" className={`${classes.btn_buy}`}>
-                  Buy Now
-                </Link>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
