@@ -1,21 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
-import useFetch from "../../hooks/useFetch";
+import checkPageStatus from "../../services/checkPageStatus";
 import classes from "./Header.module.css";
 
 export default function Header() {
-  const pages = useFetch("data/pages.json", [
-    {
-      name: "",
-      status: "",
-    },
-  ]);
+  // const pages = useFetch("data/pages.json", [
+  //   {
+  //     name: "",
+  //     status: "",
+  //   },
+  // ]);
 
-  const checkPageStatus = (page: string) => {
-    return pages.find((item) => item.name === page)?.status === "true"
-      ? true
-      : false;
-  };
-  console.log(checkPageStatus("Contact"));
+  // const checkPageStatus = (page: string) => {
+  //   return pages.find((item) => item.name === page)?.status === "true"
+  //     ? true
+  //     : false;
+  // };
+  // console.log(checkPageStatus("Contact"));
 
   return (
     <header
@@ -76,7 +76,7 @@ export default function Header() {
                   </li>
                 ) : null}
 
-                {checkPageStatus("Testimonial") ? (
+                {checkPageStatus("Testimonials") ? (
                   <li className={`${classes.navbar_li} ${classes.dropdown_li}`}>
                     <NavLink
                       to="/testimonials"
