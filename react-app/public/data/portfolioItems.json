@@ -11,7 +11,7 @@
   {
     "id": "2",
     "name": "Web3",
-    "category": ["web design"],
+    "category": ["web"],
     "imgPath": "images/portfolio/portfolio-2.jpg",
     "date": "01 March, 2020",
     "url": "www.example.com",
@@ -38,7 +38,7 @@
   {
     "id": "5",
     "name": "web2",
-    "category": ["web design"],
+    "category": ["web"],
     "imgPath": "images/portfolio/portfolio-5.jpg",
     "date": "01 March, 2020",
     "url": "www.example.com",
@@ -74,7 +74,7 @@
   {
     "id": "9",
     "name": "Web1",
-    "category": ["web design"],
+    "category": ["web"],
     "imgPath": "images/portfolio/portfolio-9.jpg",
     "date": "01 March, 2020",
     "url": "www.example.com",

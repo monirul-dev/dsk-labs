@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import classes from "./PortfolioItems.module.css";
 
@@ -14,7 +14,8 @@ interface IPortfolio {
 interface IPortfolios extends Array<IPortfolio> {}
 
 export default function PortfolioItems() {
-  const [filteredPortfolio, setFilteredPortfolio] = useState([]);
+  const [filteredPortfolio, setFilteredPortfolio] = useState<IPortfolios>([]);
+  const [activeFilter, setActiveFilter] = useState("*");
 
   const portfolio = useFetch<IPortfolios>("./data/portfolioItems.json", [
     {
@@ -27,24 +28,43 @@ export default function PortfolioItems() {
       description: "",
     },
   ]);
+  useEffect(() => {
+    if (activeFilter === "*") {
+      setFilteredPortfolio(portfolio);
+      return;
+    }
+    const filtered = portfolio.filter((item) => {
+      return item.category.includes(activeFilter);
+    });
+    setFilteredPortfolio(filtered);
+  }, [activeFilter, portfolio]);
 
-  const handleFilter = () => {};
+  const handleFilter = (e: any) => {
+    setActiveFilter(e.target.dataset.filter);
+  };
+  console.log("filtered:", filteredPortfolio);
+
   return (
     <section className="portfolio">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul className={classes.portfolio_flters}>
-              <li data-filter="*" className="filter-active">
+              <li
+                onClick={handleFilter}
+                data-filter="*"
+                className="filter-active"
+                value="all"
+              >
                 All
               </li>
-              <li onClick={handleFilter} data-filter=".filter-app">
+              <li onClick={handleFilter} data-filter="app" value="app">
                 App
               </li>
-              <li onClick={handleFilter} data-filter=".filter-other">
+              <li onClick={handleFilter} data-filter="other" value="other">
                 Other
               </li>
-              <li onClick={handleFilter} data-filter=".filter-web">
+              <li onClick={handleFilter} data-filter="web" value="web">
                 Web
               </li>
             </ul>
@@ -52,10 +72,11 @@ export default function PortfolioItems() {
         </div>
 
         <div className="row portfolio-container">
-          {portfolio.map((item) => {
+          {filteredPortfolio.map((item) => {
             return (
               <div
                 className={`col-lg-4 col-md-6 ${classes.portfolio_item} filter-app`}
+                key={item.id}
               >
                 <div className={classes.portfolio_wrap}>
                   <img src={item.imgPath} className="img-fluid" alt="" />
