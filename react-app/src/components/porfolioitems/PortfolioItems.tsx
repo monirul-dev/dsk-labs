@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import classes from "./PortfolioItems.module.css";
@@ -71,10 +72,14 @@ export default function PortfolioItems() {
           </div>
         </div>
 
-        <div className="row portfolio-container">
+        <motion.div layout className="row portfolio-container">
           {filteredPortfolio.map((item) => {
             return (
-              <div
+              <motion.div
+                layout
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                exit={{ opacity: 0 }}
                 className={`col-lg-4 col-md-6 ${classes.portfolio_item} filter-app`}
                 key={item.id}
               >
@@ -103,10 +108,10 @@ export default function PortfolioItems() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
