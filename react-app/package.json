@@ -1,5 +1,6 @@
 {
   "name": "react-app",
+  "homepage": "http://dsk-labs.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
