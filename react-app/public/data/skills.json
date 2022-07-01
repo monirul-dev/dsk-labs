@@ -1,0 +1,26 @@
+[
+  {
+    "skill-name": "HTML",
+    "progress": "100%"
+  },
+  {
+    "skill-name": "CSS",
+    "progress": "90%"
+  },
+  {
+    "skill-name": "JavaScript",
+    "progress": "70%"
+  },
+  {
+    "skill-name": "PHP",
+    "progress": "95%"
+  },
+  {
+    "skill-name": "WORDPRESS/CMS",
+    "progress": "85%"
+  },
+  {
+    "skill-name": "PHOTOSHOP",
+    "progress": "50%"
+  }
+]

@@ -1,10 +1,25 @@
 import { useRef } from "react";
 import { ProgressBar } from "react-bootstrap";
 import { Waypoint } from "react-waypoint";
+import useFetch from "../../hooks/useFetch";
 import classes from "./Skills.module.css";
+
+interface ISkill {
+  skill: string;
+  progress: string;
+}
+
+interface ISkills extends Array<ISkill> {}
 
 export default function Skills() {
   const progressRef = useRef<HTMLInputElement | null>(null);
+
+  const skills = useFetch<ISkills>("/data/skills.json", [
+    {
+      skill: "",
+      progress: "",
+    },
+  ]);
 
   function progressAnimation() {
     console.log("hi");

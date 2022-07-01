@@ -43,7 +43,6 @@ export default function PortfolioItems() {
   const handleFilter = (e: any) => {
     setActiveFilter(e.target.dataset.filter);
   };
-  console.log("filtered:", filteredPortfolio);
 
   return (
     <section className="portfolio">
