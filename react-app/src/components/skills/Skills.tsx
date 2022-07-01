@@ -5,6 +5,7 @@ import useFetch from "../../hooks/useFetch";
 import classes from "./Skills.module.css";
 
 interface ISkill {
+  id: string;
   skill: string;
   progress: string;
 }
@@ -16,6 +17,7 @@ export default function Skills() {
 
   const skills = useFetch<ISkills>("/data/skills.json", [
     {
+      id: "",
       skill: "",
       progress: "",
     },
@@ -24,6 +26,7 @@ export default function Skills() {
   function progressAnimation() {
     console.log("hi");
   }
+  console.log("skills: ", skills);
 
   return (
     <section className="skills">
@@ -34,63 +37,22 @@ export default function Skills() {
         </div>
         <Waypoint onEnter={progressAnimation}>
           <div className="row skills-content">
-            <div className="col-lg-6">
-              <div className={classes.progress}>
-                <span className={classes.skill}>
-                  HTML <i className={classes.skill_val}>100%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <ProgressBar ref={progressRef} now={100} />
+            {skills.map((data) => {
+              return (
+                <div className={`${classes.progress} col-lg-6`} key={data.id}>
+                  <span className={classes.skill}>
+                    {data.skill}
+                    <i className={classes.skill_val}>{data.progress}</i>
+                  </span>
+                  <div className="progress-bar-wrap">
+                    <ProgressBar
+                      ref={progressRef}
+                      now={parseInt(data.progress)}
+                    />
+                  </div>
                 </div>
-              </div>
-
-              <div className={classes.progress}>
-                <span className={classes.skill}>
-                  CSS <i className={classes.skill_val}>90%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <ProgressBar ref={progressRef} now={90} />
-                </div>
-              </div>
-
-              <div className={classes.progress}>
-                <span className={classes.skill}>
-                  JavaScript <i className={classes.skill_val}>75%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <ProgressBar ref={progressRef} now={75} />
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-6">
-              <div className={classes.progress}>
-                <span className={classes.skill}>
-                  PHP <i className={classes.skill_val}>80%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <ProgressBar now={80} />
-                </div>
-              </div>
-
-              <div className={classes.progress}>
-                <span className={classes.skill}>
-                  WordPress/CMS <i className={classes.skill_val}>90%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <ProgressBar now={90} />
-                </div>
-              </div>
-
-              <div className={classes.progress}>
-                <span className={classes.skill}>
-                  Photoshop <i className={classes.skill_val}>55%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <ProgressBar now={55} />
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </Waypoint>
       </div>

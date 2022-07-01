@@ -1,26 +1,8 @@
 [
-  {
-    "skill-name": "HTML",
-    "progress": "100%"
-  },
-  {
-    "skill-name": "CSS",
-    "progress": "90%"
-  },
-  {
-    "skill-name": "JavaScript",
-    "progress": "70%"
-  },
-  {
-    "skill-name": "PHP",
-    "progress": "95%"
-  },
-  {
-    "skill-name": "WORDPRESS/CMS",
-    "progress": "85%"
-  },
-  {
-    "skill-name": "PHOTOSHOP",
-    "progress": "50%"
-  }
+  { "id": "1", "skill": "HTML", "progress": "100%" },
+  { "id": "2", "skill": "CSS", "progress": "90%" },
+  { "id": "3", "skill": "JavaScript", "progress": "70%" },
+  { "id": "4", "skill": "PHP", "progress": "95%" },
+  { "id": "5", "skill": "WORDPRESS/CMS", "progress": "85%" },
+  { "id": "6", "skill": "PHOTOSHOP", "progress": "50%" }
 ]

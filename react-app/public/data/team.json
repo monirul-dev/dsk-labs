@@ -46,5 +46,29 @@
       "instagram": "https://www.instagram.com/",
       "linkedin": "https://www.linkedin.com"
     }
+  },
+  {
+    "avatar": "images/team/team-4.jpg",
+    "name": "Amanda Jepson",
+    "designation": "Accountant",
+    "description": "EDolorum tempora officiis odit laborum officiis",
+    "social": {
+      "twitter": "https://twitter.com/",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "linkedin": "https://www.linkedin.com"
+    }
+  },
+  {
+    "avatar": "images/team/team-4.jpg",
+    "name": "Amanda Jepson",
+    "designation": "Accountant",
+    "description": "EDolorum tempora officiis odit laborum officiis",
+    "social": {
+      "twitter": "https://twitter.com/",
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "linkedin": "https://www.linkedin.com"
+    }
   }
 ]
