@@ -49,7 +49,7 @@ export default function PortfolioItems() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
-            <ul className={classes.portfolio_flters}>
+            <ul className={classes.portfolio_filters}>
               <li
                 onClick={handleFilter}
                 data-filter="*"

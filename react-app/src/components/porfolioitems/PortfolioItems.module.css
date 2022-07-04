@@ -4,13 +4,13 @@
 .portfolio_item {
   margin-bottom: 30px;
 }
-.portfolio_flters {
+.portfolio_filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
-.portfolio_flters li {
+.portfolio_filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
@@ -23,12 +23,12 @@
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
 }
-.portfolio_flters li:hover,
-.portfolio_flters li.filter-active {
+.portfolio_filters li:hover,
+.portfolio_filters li.filter-active {
   color: #fff;
   background: #d9232d;
 }
-.portfolio_flters li:last-child {
+.portfolio_filters li:last-child {
   margin-right: 0;
 }
 .portfolio_wrap {
