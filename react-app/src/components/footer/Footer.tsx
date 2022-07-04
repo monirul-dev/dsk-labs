@@ -3,6 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import classes from "./Footer.module.css";
 
 interface IContact {
+  siteName: string;
   addressLine1: string;
   addressLine2: string;
   phone: string;
@@ -11,6 +12,7 @@ interface IContact {
 
 export default function Footer() {
   const contact = useFetch<IContact>("./data/contact.json", {
+    siteName: "",
     addressLine1: "",
     addressLine2: "",
     phone: "",
@@ -24,7 +26,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className={classes.footer_info}>
-                <h3>Sailor</h3>
+                <h3>{contact.siteName}</h3>
                 <p>
                   {contact.addressLine1} <br />
                   {contact.addressLine2} <br />

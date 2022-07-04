@@ -1,21 +1,24 @@
 import { Link, NavLink } from "react-router-dom";
+import useFetch from "../../hooks/useFetch";
 import checkPageStatus from "../../services/checkPageStatus";
 import classes from "./Header.module.css";
 
-export default function Header() {
-  // const pages = useFetch("data/pages.json", [
-  //   {
-  //     name: "",
-  //     status: "",
-  //   },
-  // ]);
+interface IContact {
+  siteName: string;
+  addressLine1: string;
+  addressLine2: string;
+  email: string;
+  phone: string;
+}
 
-  // const checkPageStatus = (page: string) => {
-  //   return pages.find((item) => item.name === page)?.status === "true"
-  //     ? true
-  //     : false;
-  // };
-  // console.log(checkPageStatus("Contact"));
+export default function Header() {
+  const contact = useFetch<IContact>("./data/contact.json", {
+    siteName: "",
+    addressLine1: "",
+    addressLine2: "",
+    phone: "",
+    email: "",
+  });
 
   return (
     <header
@@ -24,7 +27,7 @@ export default function Header() {
       <div className="container d-flex align-items-center">
         <h1 className={`${classes.logo} me-auto`}>
           <Link to="/" className={`${classes.header_link}`}>
-            Sailor
+            {contact.siteName}
           </Link>
         </h1>
         <nav className={`${classes.navbar} navbar`}>
