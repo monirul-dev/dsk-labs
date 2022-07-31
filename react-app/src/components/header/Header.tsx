@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import checkPageStatus from "../../services/checkPageStatus";
 import classes from "./Header.module.css";
@@ -13,10 +13,13 @@ interface IContact {
 }
 
 export default function Header() {
+  const btnRef = useRef<HTMLElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const dropdownRef = useRef<HTMLUListElement>(null);
   const [navBar, setnavBarStatus] = useState(false);
   const [dropdown, setdropdownStatus] = useState(false);
+  const location = useLocation();
+  
   const contact = useFetch<IContact>("./data/contact.json", {
     siteName: "",
     addressLine1: "",
@@ -25,7 +28,23 @@ export default function Header() {
     email: "",
   });
 
+  useEffect(() => {
+    if(window.innerWidth > 990) return;
+    console.log(location.pathname);
+    if (navBar) {
+      navRef.current?.classList.remove(classes.navbar_mobile);
+      btnRef.current?.classList.remove(classes.bi_x, 'bi-x');
+      btnRef.current?.classList.add('bi-list');
+      setnavBarStatus(false);
+    }
+    if (dropdown) {
+      dropdownRef.current?.classList.remove(classes.dropdown_active);
+      setdropdownStatus(false);
+    }
+  },[location.pathname]);
+
   const toggleMobileNav = (event: React.MouseEvent<HTMLElement>) => {
+    if(window.innerWidth > 990) return true;
     if (navBar) {
       navRef.current?.classList.remove(classes.navbar_mobile);
       event.currentTarget.classList.remove(classes.bi_x, 'bi-x');
@@ -206,7 +225,7 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <i className={`bi bi-list ${classes.mobile_nav_toggle}`} onClick={toggleMobileNav}></i>
+          <i ref={btnRef} className={`bi bi-list ${classes.mobile_nav_toggle}`} onClick={toggleMobileNav}></i>
         </nav>
       </div>
     </header>
