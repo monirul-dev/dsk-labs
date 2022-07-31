@@ -14,7 +14,7 @@
 
     "button": "#",
     "badge": {
-      "state": "inactive",
+      "state": "active",
       "text": "Pro"
     }
   },
