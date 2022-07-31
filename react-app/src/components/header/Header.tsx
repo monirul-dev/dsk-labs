@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import checkPageStatus from "../../services/checkPageStatus";
@@ -12,6 +13,10 @@ interface IContact {
 }
 
 export default function Header() {
+  const navRef = useRef<HTMLElement>(null);
+  const dropdownRef = useRef<HTMLUListElement>(null);
+  const [navBar, setnavBarStatus] = useState(false);
+  const [dropdown, setdropdownStatus] = useState(false);
   const contact = useFetch<IContact>("./data/contact.json", {
     siteName: "",
     addressLine1: "",
@@ -19,6 +24,32 @@ export default function Header() {
     phone: "",
     email: "",
   });
+
+  const toggleMobileNav = (event: React.MouseEvent<HTMLElement>) => {
+    if (navBar) {
+      navRef.current?.classList.remove(classes.navbar_mobile);
+      event.currentTarget.classList.remove(classes.bi_x, 'bi-x');
+      event.currentTarget.classList.add('bi-list');
+      setnavBarStatus(false);
+    } else {
+      navRef.current?.classList.add(classes.navbar_mobile);
+      event.currentTarget.classList.remove('bi-list');
+      event.currentTarget.classList.add(classes.bi_x, 'bi-x');
+      setnavBarStatus(true);
+    }
+  }
+
+  const toggleDropDown = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    if(window.innerWidth > 990) return true;
+    if (dropdown) {
+      dropdownRef.current?.classList.remove(classes.dropdown_active);
+      setdropdownStatus(false);
+    } else {
+      dropdownRef.current?.classList.add(classes.dropdown_active);
+      setdropdownStatus(true);
+    }
+  }
 
   return (
     <header
@@ -30,7 +61,7 @@ export default function Header() {
             {contact.siteName}
           </Link>
         </h1>
-        <nav className={`${classes.navbar} navbar`}>
+        <nav ref={navRef} className={`${classes.navbar} navbar`}>
           <ul className={`${classes.navbar_ul}`}>
             <li className={`${classes.navbar_li}`}>
               <NavLink
@@ -45,10 +76,10 @@ export default function Header() {
               </NavLink>
             </li>
             <li className={`${classes.navbar_li} ${classes.dropdown} dropdown`}>
-              <a href="/" className={`${classes.navbar_link}`}>
+              <a href="/" className={`${classes.navbar_link}`} onClick={toggleDropDown}>
                 <span>About</span> <i className="bi bi-chevron-down"></i>
               </a>
-              <ul className={`${classes.navbar_ul} ${classes.dropdown_ul}`}>
+              <ul ref={dropdownRef} className={`${classes.navbar_ul} ${classes.dropdown_ul}`}>
                 {checkPageStatus("About") ? (
                   <li className={`${classes.navbar_li} ${classes.dropdown_li}`}>
                     <NavLink
@@ -170,12 +201,12 @@ export default function Header() {
             ) : null}
 
             <li className={`${classes.navbar_li}`}>
-              <Link to="/" className={`${classes.getstarted}`}>
+              <Link to="/" className={`${classes.navbar_link} ${classes.getstarted}`}>
                 Get Started
               </Link>
             </li>
           </ul>
-          <i className={`bi bi-list ${classes.mobile_nav_toggle}`}></i>
+          <i className={`bi bi-list ${classes.mobile_nav_toggle}`} onClick={toggleMobileNav}></i>
         </nav>
       </div>
     </header>
