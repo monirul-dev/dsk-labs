@@ -1,38 +1,38 @@
 [
   {
     "id": "1",
-    "heading": "Lorem Ipsum",
-    "description": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",
+    "heading": "Database solution",
+    "description": "Are you struggling to manage your data efficiently? Our customized database solutions are designed to simplify your data management processes and enhance the performance of your business.",
     "iconClassName": "bi bi-briefcase"
   },
   {
     "id": "2",
-    "heading": "Sed ut perspiciatis",
-    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+    "heading": ".NET solutions",
+    "description": "Are you looking for innovative and cutting-edge .NET solutions to power your business operations? Look no further than our team of expert .NET developers! We specialize in providing comprehensive .NET solutions that cater to your unique business needs and deliver tangible results.",
     "iconClassName": "bi bi-card-checklist"
   },
   {
     "id": "3",
-    "heading": "Magni Dolore",
-    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque",
+    "heading": "Azure Cloud Soluitons",
+    "description": "Azure Cloud is a comprehensive suite of cloud computing services offered by Microsoft. Transform your business with our secure and reliable Azure Cloud services. Contact us today to learn more and take the first step toward driving innovation, efficiency, and growth in your industry.",
     "iconClassName": "bi bi-bar-chart"
   },
   {
     "id": "4",
-    "heading": "Dolor Sitema",
-    "description": "Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata",
+    "heading": "IOT",
+    "description": "Are you looking to connect and automate your devices and systems to enhance your business operations? Look no further than our comprehensive IoT services! Our team of experts is dedicated to providing you with a seamless IoT solution that streamlines your operations and enhances your bottom line.",
     "iconClassName": "bi bi-binoculars"
   },
   {
     "id": "5",
-    "heading": "Nemo Enim",
-    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "heading": "App Support",
+    "description": "In today's fast-paced digital landscape, having a high-quality app that runs smoothly is essential for the success of your business.If you're ready to maximize your app's potential with our expert App Support services, contact us today to schedule a consultation with our team of app support specialists. We look forward to helping you take your app to the next level.",
     "iconClassName": "bi bi-brightness-high"
   },
   {
     "id": "6",
-    "heading": "Eiusmod Tempor",
-    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi",
+    "heading": "OCR Solution",
+    "description": "Introducing our OCR Solution Service - the perfect tool for businesses looking to streamline their document management processes. Our OCR Solution Service utilizes cutting-edge technology to extract text from images, making it easier for businesses to manage and process their documents.",
     "iconClassName": "bi bi-calendar4-week"
   }
 ]

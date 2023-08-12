@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "heading": "Welcome to Sailor",
-    "description": "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.",
-    "imagePath": "url(images/slide/slide-1.jpg)"
+    "heading": "Welcome to Database Solutions",
+    "description": "Unlock the potential of your data with our expert solutions and take your business to the next level. Get the insights you need to make informed business decisions with our advanced data analysis and visualization tools.",
+    "imagePath": "url(images/slide/slide-1.webp)"
   },
   {
     "id": 2,
-    "heading": "Welcome to Sailor",
-    "description": "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.",
-    "imagePath": "url(images/slide/slide-2.jpg)"
+    "heading": "Welcome to Cloud Solutions",
+    "description": "Experience the power of the cloud with our cutting-edge technology and unlock new opportunities for growth and success with our Cloud Solutions service. From startups to enterprises, our Cloud Solutions service is designed to meet your unique needs.",
+    "imagePath": "url(images/slide/slide-2.webp)"
   },
   {
     "id": 3,
-    "heading": "Welcome to Sailor1",
-    "description": "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.",
-    "imagePath": "url(images/slide/slide-3.jpg)"
+    "heading": "Welcome to Custom Apps",
+    "description": "Unlock new possibilities for growth and success with our innovative Custom Apps Service and a seamless and intuitive experience. Let us help you transform your business with our state-of-the-art Custom Apps Service.",
+    "imagePath": "url(images/slide/slide-3.webp)"
   }
 ]

@@ -2,43 +2,43 @@
   {
     "id": 1,
     "avatar": "images/testimonials/testimonials-1.jpg",
-    "name": "Saul Goodman",
-    "designation": "Ceo & Founder",
-    "testimonial": "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
+    "name": "John Doe",
+    "designation": "CTO",
+    "testimonial": "We were struggling with managing our vast amounts of data, but thanks to the database solution services provided by this company, our operations have become much more streamlined and efficient."
   },
   {
     "id": 2,
     "avatar": "images/testimonials/testimonials-2.jpg",
-    "name": "Sara Wilsson",
-    "designation": "Designer",
-    "testimonial": "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa."
+    "name": "Sarah Johnson",
+    "designation": "Lead Developer",
+    "testimonial": "Their .net solution services have allowed us to develop robust applications that have been critical in driving our growth."
   },
   {
     "id": 3,
     "avatar": "images/testimonials/testimonials-3.jpg",
-    "name": "Jena Karlis",
-    "designation": "Store Owner",
-    "testimonial": "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim."
+    "name": "Mark Smith",
+    "designation": "Director of IT",
+    "testimonial": "The Azure cloud services provided by this company have enabled us to scale up our operations seamlessly, with the help of their expert team."
   },
   {
     "id": 4,
     "avatar": "images/testimonials/testimonials-4.jpg",
-    "name": "Matt Brandon",
-    "designation": "Freelancer",
-    "testimonial": "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam."
+    "name": "Lisa Green",
+    "designation": "Operations Manager",
+    "testimonial": "Their IoT solutions have provided us with valuable real-time insights into our operations, helping us make data-driven decisions."
   },
   {
     "id": 5,
     "avatar": "images/testimonials/testimonials-5.jpg",
-    "name": "John Larson",
-    "designation": "Entrepreneur",
-    "testimonial": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+    "name": "Michael Lee",
+    "designation": "Head of IT at GHI Corporation",
+    "testimonial": "The app support services provided by this company have been exceptional, ensuring that our applications are always up and running."
   },
   {
     "id": 6,
     "avatar": "images/testimonials/testimonials-6.jpg",
-    "name": "Emily Harison",
-    "designation": "Store Owner",
-    "testimonial": "Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem."
+    "name": "Jane Brown",
+    "designation": "CFO",
+    "testimonial": "Their database solution services have helped us optimize our data management and processing, saving us time and money."
   }
 ]
