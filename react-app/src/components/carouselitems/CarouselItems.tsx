@@ -30,7 +30,7 @@ export default function CarouselItems() {
                     {data.description}
                   </p>
                   <a
-                    href="#about"
+                    href="/about"
                     className={`${classes.btn_get_started} animate__animated animate__fadeInUp scrollto`}
                   >
                     Read More
