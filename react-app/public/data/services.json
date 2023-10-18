@@ -13,9 +13,39 @@
   },
   {
     "id": "3",
-    "heading": "Azure Cloud Soluitons",
+    "heading": "Cloud Solutions",
     "description": "Azure Cloud is a comprehensive suite of cloud computing services offered by Microsoft. Transform your business with our secure and reliable Azure Cloud services. Contact us today to learn more and take the first step toward driving innovation, efficiency, and growth in your industry.",
-    "iconClassName": "bi bi-bar-chart"
+    "iconClassName": "bi bi-bar-chart",
+    "children": [
+      {
+        "id": "31",
+        "heading": "CLOUD STRATEGY",
+        "description": "Develop both short-term and long-term strategies for your Azure initiatives and a clear blueprint of how your business outcomes can improve and company processes will be affected with a cloud roadmap. Ensure your IT infrastructure is perfectly set up to help meet company targets and can scale with your business.",
+        "iconClassName": "bi bi-database-check",
+        "link": "#"
+      },
+      {
+        "id": "32",
+        "heading": "INFRASTRUCTURE FOUNDATION",
+        "description": "Manage your cloud infrastructure much more efficiently so you can deploy infrastructure programmatically. You gain a flexible and scalable environment, making it ideal for enterprise computing by using tools like automation and management software, enabling users to access the resources they need, when they need them.",
+        "iconClassName": "bi bi-gear-wide-connected",
+        "link": "#"
+      },
+      {
+        "id": "33",
+        "heading": "CLOUD SECURITY",
+        "description": "Incorporating the cloud into your current enterprise security is more than simply adding a few more controls or solutions. It involves an appraisal of your resources and specific business needs so that your organization can develop a new approach to your cloud security strategy. We can help you manage a cohesive hybrid, multi-cloud security program, necessary to establish visibility and management.",
+        "iconClassName": "bi bi-database-lock",
+        "link": "#"
+      },
+      {
+        "id": "34",
+        "heading": "CLOUD MIGRATION",
+        "description": "Organizations have the difficult job of balancing countless priorities when selecting the right platforms and architecture. Cost, security, compliance, data protection, business continuity/disaster recovery, agility, scale, and innovation are all factors in the decision-making process.",
+        "iconClassName": "bi bi-hdd-network",
+        "link": "#"
+      }
+    ]
   },
   {
     "id": "4",
