@@ -167,13 +167,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-            ) : null}
-
-            <li className={`${classes.navbar_li}`}>
-              <Link to="/" className={`${classes.getstarted}`}>
-                Get Started
-              </Link>
-            </li>
+            ) : null}            
           </ul>
           <i className={`bi bi-list ${classes.mobile_nav_toggle}`}></i>
         </nav>

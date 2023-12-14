@@ -1,46 +1,46 @@
 [
   {
     "id": "1",
-    "heading": "Database solution",
+    "heading": "Database Solution",
     "description": "Are you struggling to manage your data efficiently? Our customized database solutions are designed to simplify your data management processes and enhance the performance of your business.",
     "iconClassName": "bi bi-briefcase"
   },
   {
     "id": "2",
-    "heading": ".NET solutions",
+    "heading": ".NET Solution",
     "description": "Are you looking for innovative and cutting-edge .NET solutions to power your business operations? Look no further than our team of expert .NET developers! We specialize in providing comprehensive .NET solutions that cater to your unique business needs and deliver tangible results.",
     "iconClassName": "bi bi-card-checklist"
   },
   {
     "id": "3",
-    "heading": "Cloud Solutions",
+    "heading": "Cloud Solution",
     "description": "Azure Cloud is a comprehensive suite of cloud computing services offered by Microsoft. Transform your business with our secure and reliable Azure Cloud services. Contact us today to learn more and take the first step toward driving innovation, efficiency, and growth in your industry.",
     "iconClassName": "bi bi-bar-chart",
     "children": [
       {
         "id": "31",
-        "heading": "CLOUD STRATEGY",
+        "heading": "Cloud Strategy",
         "description": "Develop both short-term and long-term strategies for your Azure initiatives and a clear blueprint of how your business outcomes can improve and company processes will be affected with a cloud roadmap. Ensure your IT infrastructure is perfectly set up to help meet company targets and can scale with your business.",
         "iconClassName": "bi bi-database-check",
         "link": "#"
       },
       {
         "id": "32",
-        "heading": "INFRASTRUCTURE FOUNDATION",
+        "heading": "Infrastructure Foundation",
         "description": "Manage your cloud infrastructure much more efficiently so you can deploy infrastructure programmatically. You gain a flexible and scalable environment, making it ideal for enterprise computing by using tools like automation and management software, enabling users to access the resources they need, when they need them.",
         "iconClassName": "bi bi-gear-wide-connected",
         "link": "#"
       },
       {
         "id": "33",
-        "heading": "CLOUD SECURITY",
+        "heading": "Cloud Security",
         "description": "Incorporating the cloud into your current enterprise security is more than simply adding a few more controls or solutions. It involves an appraisal of your resources and specific business needs so that your organization can develop a new approach to your cloud security strategy. We can help you manage a cohesive hybrid, multi-cloud security program, necessary to establish visibility and management.",
         "iconClassName": "bi bi-database-lock",
         "link": "#"
       },
       {
         "id": "34",
-        "heading": "CLOUD MIGRATION",
+        "heading": "Cloud Migration",
         "description": "Organizations have the difficult job of balancing countless priorities when selecting the right platforms and architecture. Cost, security, compliance, data protection, business continuity/disaster recovery, agility, scale, and innovation are all factors in the decision-making process.",
         "iconClassName": "bi bi-hdd-network",
         "link": "#"
