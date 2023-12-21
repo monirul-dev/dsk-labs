@@ -2,43 +2,43 @@
   {
     "id": 1,
     "avatar": "images/testimonials/testimonials-1.jpg",
-    "name": "John Doe",
+    "name": "John Doe - Client from the IT Industry",
     "designation": "CTO",
-    "testimonial": "We were struggling with managing our vast amounts of data, but thanks to the database solution services provided by this company, our operations have become much more streamlined and efficient."
+    "testimonial": "DSK LABS has been instrumental in transforming our IT landscape. Their team of experts delivered a tailored .NET solution that exceeded our expectations. Their commitment to quality and efficiency sets them apart. Highly recommended!"
   },
   {
     "id": 2,
     "avatar": "images/testimonials/testimonials-2.jpg",
-    "name": "Sarah Johnson",
+    "name": "Sarah Johnson - Business Owner in the Healthcare Sector",
     "designation": "Lead Developer",
-    "testimonial": "Their .net solution services have allowed us to develop robust applications that have been critical in driving our growth."
+    "testimonial": "Partnering with DSK LABS was a game-changer for our healthcare business. Their database solutions are not only scalable and efficient but also ensure the security of sensitive patient information. Their expertise is unmatched, and their commitment to our success is evident in every interaction."
   },
   {
     "id": 3,
-    "avatar": "images/testimonials/testimonials-3.jpg",
-    "name": "Mark Smith",
-    "designation": "Director of IT",
-    "testimonial": "The Azure cloud services provided by this company have enabled us to scale up our operations seamlessly, with the help of their expert team."
+    "avatar": "images/testimonials/testimonials-6.jpg",
+    "name": "Jane Brown - Technology Enthusiast and Startup Co-founder",
+    "designation": "CFO",
+    "testimonial": "Working with DSK LABS was a game-changer for our tech startup. Their team's expertise in designing and implementing scalable IoT solutions was exactly what we needed. The real-time data analytics capabilities they provided opened up new possibilities for our business. DSK LABS isn't just a service provider; they are a strategic partner in our journey to success."
   },
   {
     "id": 4,
     "avatar": "images/testimonials/testimonials-4.jpg",
-    "name": "Lisa Green",
+    "name": "Lisa Green - E-commerce Entrepreneur",
     "designation": "Operations Manager",
-    "testimonial": "Their IoT solutions have provided us with valuable real-time insights into our operations, helping us make data-driven decisions."
+    "testimonial": "In the fast-paced world of e-commerce, having a reliable cloud solution is crucial. DSK LABS helped us leverage Azure cloud effectively, providing scalable and secure solutions. Their commitment to staying updated ensures our mobile apps run seamlessly, contributing to our customer satisfaction."
   },
   {
     "id": 5,
     "avatar": "images/testimonials/testimonials-5.jpg",
-    "name": "Michael Lee",
+    "name": "Michael Lee - Corporate Executive in Finance",
     "designation": "Head of IT at GHI Corporation",
-    "testimonial": "The app support services provided by this company have been exceptional, ensuring that our applications are always up and running."
+    "testimonial": "Our partnership with DSK LABS for database solutions has streamlined our financial operations. Their team's expertise in various technologies allowed us to choose the right solution tailored to our business needs. The impact on efficiency and security has been remarkable. We're grateful for their professionalism and dedication."
   },
   {
     "id": 6,
-    "avatar": "images/testimonials/testimonials-6.jpg",
-    "name": "Jane Brown",
-    "designation": "CFO",
-    "testimonial": "Their database solution services have helped us optimize our data management and processing, saving us time and money."
+    "avatar": "images/testimonials/testimonials-3.jpg",
+    "name": "Mark Smith - IoT Enthusiast and Startup Founder",
+    "designation": "Director of IT",
+    "testimonial": "DSK LABS played a pivotal role in bringing our IoT ideas to life. From conceptualization to implementation, their team guided us seamlessly through the process. The real-time data insights we now have are driving our business growth. Exceptional work!"
   }
 ]
