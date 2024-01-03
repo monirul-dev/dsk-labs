@@ -58,14 +58,14 @@ export default function PortfolioItems() {
               >
                 All
               </li>
-              <li onClick={handleFilter} data-filter="app" value="app">
-                App
+              <li onClick={handleFilter} data-filter="pp" value="pp">
+                Power Platform
               </li>
               <li onClick={handleFilter} data-filter="other" value="other">
                 Other
               </li>
-              <li onClick={handleFilter} data-filter="web" value="web">
-                Web
+              <li onClick={handleFilter} data-filter="ui" value="ui">
+                UX/UI
               </li>
             </ul>
           </div>
@@ -88,8 +88,8 @@ export default function PortfolioItems() {
                     <h4>{item.name}</h4>
                     <p>{item.category}</p>
                     <div className={classes.portfolio_links}>
-                      <a
-                        href="images/portfolio/portfolio-1.jpg"
+                      {/* <a
+                        href="images/portfolio/UI1.png"
                         data-gallery="portfolioGallery"
                         className="portfolio-lightbox"
                         title="App 1"
@@ -103,7 +103,7 @@ export default function PortfolioItems() {
                         title="Portfolio Details"
                       >
                         <i className="bx bx-link"></i>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

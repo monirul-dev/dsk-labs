@@ -109,8 +109,9 @@ export default function Footer() {
             <div className={`col-lg-4 col-md-6 ${classes.footer_newsletter}`}>
               <h4>Our Newsletter</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                Subscribe to our newsletter and stay updated with the latest
+                news, exclusive offers, and exciting updates. Enter your email
+                below to join our community!"
               </p>
               <form>
                 <input type="email" name="email" />
