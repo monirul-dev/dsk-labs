@@ -35,19 +35,39 @@ export default function Footer() {
                   <strong>Email:</strong> {contact.email} <br />
                 </p>
                 <div className={`${classes.social_links} mt-3`}>
-                  <a href="twitter.com" className="twitter">
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    className="twitter"
+                  >
                     <i className="bx bxl-twitter"></i>
                   </a>
-                  <a href="facebook.com" className="facebook">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    className="facebook"
+                  >
                     <i className="bx bxl-facebook"></i>
                   </a>
-                  <a href="instagram.com" className="instagram">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    className="instagram"
+                  >
                     <i className="bx bxl-instagram"></i>
                   </a>
-                  <a href="skype.com" className="google-plus">
+                  <a
+                    href="https://skype.com"
+                    target="_blank"
+                    className="google-plus"
+                  >
                     <i className="bx bxl-skype"></i>
                   </a>
-                  <a href="linkedin.com" className="linkedin">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    className="linkedin"
+                  >
                     <i className="bx bxl-linkedin"></i>
                   </a>
                 </div>
@@ -126,13 +146,13 @@ export default function Footer() {
         <div className={classes.copyright}>
           &copy; Copyright{" "}
           <strong>
-            <span>Sailor</span>
+            <span>DSK Labs</span>
           </strong>
           . All Rights Reserved
         </div>
-        <div className={classes.credits}>
+        {/* <div className={classes.credits}>
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
