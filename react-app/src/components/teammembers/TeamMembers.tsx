@@ -31,12 +31,12 @@ export default function TeamMembers() {
       },
     },
   ]);
-  console.log(team);
+
   return (
     <div className="row">
       {team.map((data) => {
         return (
-          <div className="col-lg-6">
+          <div className="col-lg-6 mb-3">
             <div className={`${classes.team_member} d-flex align-items-start`}>
               <div className={`${classes.member_pic}`}>
                 <img src={data.avatar} className="img-fluid" alt="" />
@@ -45,36 +45,46 @@ export default function TeamMembers() {
                 <h4>{data.name}</h4>
                 <span>{data.designation}</span>
                 <p>{data.description}</p>
-                <div className={`${classes.member_social}`}>
-                  <a
-                    href={data.social.twitter}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-twitter"></i>
-                  </a>
-                  <a
-                    href={data.social.facebook}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-facebook"></i>
-                  </a>
-                  <a
-                    href={data.social.instagram}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-instagram"></i>
-                  </a>
-                  <a
-                    href={data.social.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-linkedin"></i>
-                  </a>
-                </div>
+                {data?.social && (
+                  <div className={`${classes.member_social}`}>
+                    {data.social?.twitter && (
+                      <a
+                        href={data.social.twitter}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="bx bxl-twitter"></i>
+                      </a>
+                    )}
+                    {data.social?.facebook && (
+                      <a
+                        href={data.social.facebook}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="bx bxl-facebook"></i>
+                      </a>
+                    )}
+                    {data.social?.instagram && (
+                      <a
+                        href={data.social.instagram}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="bx bxl-instagram"></i>
+                      </a>
+                    )}
+                    {data.social?.linkedin && (
+                      <a
+                        href={data.social.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="bx bxl-linkedin"></i>
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>
