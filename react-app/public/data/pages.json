@@ -34,5 +34,41 @@
   {
     "name": "Testimonials",
     "status": "true"
+  },
+  {
+    "name": "DatabaseSolutions",
+    "status": "true"
+  },
+  {
+    "name": "DotnetSolutions",
+    "status": "true"
+  },
+  {
+    "name": "Iot",
+    "status": "true"
+  },
+  {
+    "name": "AppSupport",
+    "status": "true"
+  },
+  {
+    "name": "DotnetSolutions",
+    "status": "true"
+  },
+  {
+    "name": "CloudStrategy",
+    "status": "true"
+  },
+  {
+    "name": "InfrastructureFoundation",
+    "status": "true"
+  },
+  {
+    "name": "CloudSecurity",
+    "status": "true"
+  },
+  {
+    "name": "CloudMigration",
+    "status": "true"
   }
 ]

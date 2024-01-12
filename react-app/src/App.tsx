@@ -7,6 +7,7 @@ import PageNotFound from "./components/pageNotFound/PageNotFound";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import DatabaseSolutions from "./pages/DatabaseSolutions";
 import Home from "./pages/Home";
 import NotFoundPage from "./pages/PageNotFound";
 import Portfolio from "./pages/Portfolio";
@@ -79,6 +80,16 @@ function App() {
                 element={
                   CheckPageStatus("Testimonials") ? (
                     <Testimonials />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="database-solutions"
+                element={
+                  CheckPageStatus("DatabaseSolutions") ? (
+                    <DatabaseSolutions />
                   ) : (
                     <PageNotFound />
                   )
