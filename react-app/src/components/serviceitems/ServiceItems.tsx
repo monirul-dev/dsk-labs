@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./ServiceItems.module.css";
+import Modal from "./modal/modal";
 
 interface IService {
   id: string;
@@ -57,38 +58,12 @@ export default function ServiceItems() {
           })}
         </div>
       </div>
-      {showModal && (
-        <div id="myModal" className={classes.modal}>
-          <div className={classes.modal_content}>
-            <span onClick={() => setShowModal(false)} className={classes.close}>
-              &times;
-            </span>
-            <div className="container">
-              <div className="row">
-                {modalData?.map((data: any) => {
-                  return (
-                    <div
-                      onClick={() => navigate(data.link)}
-                      className={`col-sm-12 col-md-6 ${classes.cursor}`}
-                      key={data.id}
-                    >
-                      <div
-                        className={`${classes.icon_box} ${classes.service_hover}`}
-                      >
-                        <i className={data.iconClassName}></i>
-                        <h4>
-                          <Link to="">{data.heading}</Link>
-                        </h4>
-                        <p>{data.description}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        modalData={modalData}
+      />
     </section>
   );
 }
