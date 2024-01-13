@@ -167,7 +167,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-            ) : null}            
+            ) : null}
           </ul>
           <i className={`bi bi-list ${classes.mobile_nav_toggle}`}></i>
         </nav>
