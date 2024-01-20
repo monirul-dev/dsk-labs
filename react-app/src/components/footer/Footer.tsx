@@ -35,7 +35,7 @@ export default function Footer() {
                   <strong>Email:</strong> {contact.email} <br />
                 </p>
                 <div className={`${classes.social_links} mt-3`}>
-                  <a
+                  {/* <a
                     href="https://twitter.com"
                     target="_blank"
                     className="twitter"
@@ -69,7 +69,7 @@ export default function Footer() {
                     className="linkedin"
                   >
                     <i className="bx bxl-linkedin"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -89,14 +89,14 @@ export default function Footer() {
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/services">Services</Link>
                 </li>
-                <li>
+                {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/terms">Terms of service</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/privacy">Privacy policy</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -105,23 +105,23 @@ export default function Footer() {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Web Design</Link>
+                  <Link to="/database-solutions">Database Solutions</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Web Development</Link>
+                  <Link to="/dot-net-solutions">.Net Solutions</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Product Management</Link>
+                  <Link to="/iot">IOT Solutions</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Marketing</Link>
+                  <Link to="/app-support">App Support</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Graphic Design</Link>
+                  <Link to="/ocr-solutions">OCR Solutions</Link>
                 </li>
               </ul>
             </div>
