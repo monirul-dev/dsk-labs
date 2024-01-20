@@ -5,10 +5,14 @@ import "./App.css";
 import Layout from "./components/Layout";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 import About from "./pages/About";
+import AppSupport from "./pages/AppSupport";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import DatabaseSolutions from "./pages/DatabaseSolutions";
+import DotNetSolutions from "./pages/DotNetSolutions";
 import Home from "./pages/Home";
+import Iot from "./pages/Iot";
+import OcrSolutions from "./pages/OcrSolutions";
 import NotFoundPage from "./pages/PageNotFound";
 import Portfolio from "./pages/Portfolio";
 import Pricing from "./pages/Pricing";
@@ -93,6 +97,36 @@ function App() {
                   ) : (
                     <PageNotFound />
                   )
+                }
+              />
+              <Route
+                path="app-support"
+                element={
+                  CheckPageStatus("AppSupport") ? (
+                    <AppSupport />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="dot-net-solutions"
+                element={
+                  CheckPageStatus("DotnetSolutions") ? (
+                    <DotNetSolutions />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="iot"
+                element={CheckPageStatus("Iot") ? <Iot /> : <PageNotFound />}
+              />
+              <Route
+                path="ocr-solutions"
+                element={
+                  CheckPageStatus("Ocr") ? <OcrSolutions /> : <PageNotFound />
                 }
               />
               <Route element={<NotFoundPage />} />

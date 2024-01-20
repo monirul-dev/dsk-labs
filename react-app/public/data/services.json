@@ -3,13 +3,15 @@
     "id": "1",
     "heading": "Database Solution",
     "description": "Are you struggling to manage your data efficiently? Our customized database solutions are designed to simplify your data management processes and enhance the performance of your business.",
-    "iconClassName": "bi bi-briefcase"
+    "iconClassName": "bi bi-briefcase",
+    "url": "/database-solutions"
   },
   {
     "id": "2",
     "heading": ".NET Solution",
     "description": "Are you looking for innovative and cutting-edge .NET solutions to power your business operations? Look no further than our team of expert .NET developers! We specialize in providing comprehensive .NET solutions that cater to your unique business needs and deliver tangible results.",
-    "iconClassName": "bi bi-card-checklist"
+    "iconClassName": "bi bi-card-checklist",
+    "url": "/dot-net-solutions"
   },
   {
     "id": "3",
@@ -51,18 +53,21 @@
     "id": "4",
     "heading": "IOT",
     "description": "Are you looking to connect and automate your devices and systems to enhance your business operations? Look no further than our comprehensive IoT services! Our team of experts is dedicated to providing you with a seamless IoT solution that streamlines your operations and enhances your bottom line.",
-    "iconClassName": "bi bi-binoculars"
+    "iconClassName": "bi bi-binoculars",
+    "url": "/iot"
   },
   {
     "id": "5",
     "heading": "App Support",
     "description": "In today's fast-paced digital landscape, having a high-quality app that runs smoothly is essential for the success of your business.If you're ready to maximize your app's potential with our expert App Support services, contact us today to schedule a consultation with our team of app support specialists. We look forward to helping you take your app to the next level.",
-    "iconClassName": "bi bi-brightness-high"
+    "iconClassName": "bi bi-brightness-high",
+    "url": "/app-support"
   },
   {
     "id": "6",
     "heading": "OCR Solution",
     "description": "Introducing our OCR Solution Service - the perfect tool for businesses looking to streamline their document management processes. Our OCR Solution Service utilizes cutting-edge technology to extract text from images, making it easier for businesses to manage and process their documents.",
-    "iconClassName": "bi bi-calendar4-week"
+    "iconClassName": "bi bi-calendar4-week",
+    "url": "/ocr-solutions"
   }
 ]

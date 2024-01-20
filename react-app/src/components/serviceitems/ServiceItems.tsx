@@ -9,6 +9,7 @@ interface IService {
   iconClassName: string;
   heading: string;
   description: string;
+  url: string;
   children: [Object];
 }
 
@@ -26,6 +27,7 @@ export default function ServiceItems() {
       iconClassName: "",
       heading: "",
       description: "",
+      url: "",
       children: [{}],
     },
   ]);
@@ -38,10 +40,11 @@ export default function ServiceItems() {
             return (
               <div
                 onClick={() => {
+                  console.log("asd;lfkasl;fdjksdf", data.url);
                   if (data?.children?.length > 0) {
                     setShowModal(true);
                     setModalData(data?.children);
-                  }
+                  } else navigate(data?.url);
                 }}
                 className={`col-md-6 ${classes.cursor}`}
                 key={data.id}

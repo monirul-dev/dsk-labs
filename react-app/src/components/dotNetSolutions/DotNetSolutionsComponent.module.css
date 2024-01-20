@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# dot nrt Solutions
+--------------------------------------------------------------*/
+.dot_net_solutions h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.dot_net_solutions h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+.dot_net_solutions ul {
+  list-style: none;
+  padding: 0;
+}
+.dot_net_solutions ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+.dot_net_solutions ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #d9232d;
+}
+.dot_net_solutions p:last-child {
+  margin-bottom: 0;
+}

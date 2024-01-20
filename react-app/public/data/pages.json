@@ -70,5 +70,9 @@
   {
     "name": "CloudMigration",
     "status": "true"
+  },
+  {
+    "name": "Ocr",
+    "status": "true"
   }
 ]
