@@ -20,7 +20,6 @@ export default function ContactInfo() {
   });
 
   const form = useRef();
-  console.log("🚀 ~ ContactInfo ~ form:", form);
 
   const sendEmail = (e: HTMLFormElement) => {
     e.preventDefault();
