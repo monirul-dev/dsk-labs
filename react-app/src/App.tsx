@@ -7,14 +7,19 @@ import PageNotFound from "./components/pageNotFound/PageNotFound";
 import About from "./pages/About";
 import AppSupport from "./pages/AppSupport";
 import Blog from "./pages/Blog";
+import CloudMigration from "./pages/CloudMigration";
+import CloudSecurity from "./pages/CloudSecurity";
+import CloudStrategy from "./pages/CloudStrategy";
 import Contact from "./pages/Contact";
 import DatabaseSolutions from "./pages/DatabaseSolutions";
 import DotNetSolutions from "./pages/DotNetSolutions";
 import Home from "./pages/Home";
-import Iot from "./pages/Iot";
+import InfrastructureFoundation from "./pages/InfrastructureFoundation";
+import MultiCloudPage from "./pages/MultiCloudPage";
 import OcrSolutions from "./pages/OcrSolutions";
 import NotFoundPage from "./pages/PageNotFound";
 import Portfolio from "./pages/Portfolio";
+import PowerPlatform from "./pages/PowerPlatform";
 import Pricing from "./pages/Pricing";
 import Services from "./pages/Services";
 import Team from "./pages/Team";
@@ -120,13 +125,69 @@ function App() {
                 }
               />
               <Route
-                path="iot"
-                element={CheckPageStatus("Iot") ? <Iot /> : <PageNotFound />}
+                path="power-platform"
+                element={
+                  CheckPageStatus("PowerPlatform") ? (
+                    <PowerPlatform />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
               />
               <Route
                 path="ocr-solutions"
                 element={
                   CheckPageStatus("Ocr") ? <OcrSolutions /> : <PageNotFound />
+                }
+              />
+              <Route
+                path="multi-cloud-deployment"
+                element={
+                  CheckPageStatus("MultiCloudDeployment") ? (
+                    <MultiCloudPage />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="multi-cloud-deployment/cloud-strategy"
+                element={
+                  CheckPageStatus("CloudStrategy") ? (
+                    <CloudStrategy />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="multi-cloud-deployment/infrastructure-foundation"
+                element={
+                  CheckPageStatus("CloudStrategy") ? (
+                    <InfrastructureFoundation />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="multi-cloud-deployment/cloud-security"
+                element={
+                  CheckPageStatus("CloudStrategy") ? (
+                    <CloudSecurity />
+                  ) : (
+                    <PageNotFound />
+                  )
+                }
+              />
+              <Route
+                path="multi-cloud-deployment/cloud-migration"
+                element={
+                  CheckPageStatus("CloudStrategy") ? (
+                    <CloudMigration />
+                  ) : (
+                    <PageNotFound />
+                  )
                 }
               />
               <Route element={<NotFoundPage />} />

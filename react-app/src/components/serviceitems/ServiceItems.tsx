@@ -40,7 +40,6 @@ export default function ServiceItems() {
             return (
               <div
                 onClick={() => {
-                  console.log("asd;lfkasl;fdjksdf", data.url);
                   if (data?.children?.length > 0) {
                     setShowModal(true);
                     setModalData(data?.children);

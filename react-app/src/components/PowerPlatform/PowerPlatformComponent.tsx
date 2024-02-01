@@ -1,4 +1,4 @@
-import classes from "./IotComponent.module.css";
+import classes from "./PowerPlatform.module.css";
 
 const IotComponent = () => {
   return (
@@ -16,7 +16,7 @@ const IotComponent = () => {
                   />
                 </div>
 
-                <h2 className="entry-title mt-5">Innovative IoT Solutions</h2>
+                <h2 className="entry-title mt-5">Title</h2>
 
                 <div className="entry-content">
                   <p>
@@ -53,6 +53,10 @@ const IotComponent = () => {
                     <li>
                       <i className="bi bi-check2-all"></i>Tailored Expertise
                       Across Industries
+                    </li>
+                    <li>
+                      <i className="bi bi-check2-all"></i>Strategic IoT
+                      Integration for Growth
                     </li>
                     <li>
                       <i className="bi bi-check2-all"></i>Strategic IoT

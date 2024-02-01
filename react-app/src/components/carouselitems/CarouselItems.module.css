@@ -50,6 +50,7 @@
 }
 .btn_get_started:hover {
   background: #df3740;
+  color: white;
 }
 @media (max-width: 992px) {
   .hero {

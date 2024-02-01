@@ -44,7 +44,7 @@
     "status": "true"
   },
   {
-    "name": "Iot",
+    "name": "PowerPlatform",
     "status": "true"
   },
   {
@@ -53,6 +53,10 @@
   },
   {
     "name": "DotnetSolutions",
+    "status": "true"
+  },
+  {
+    "name": "MultiCloudDeployment",
     "status": "true"
   },
   {
