@@ -30,7 +30,7 @@ export default function TestimonialItems() {
             return (
               <div className="col-lg-6 mb-3" key={data.id}>
                 <div className={`${classes.testimonial_item}`} key={data.id}>
-                  <img src={data.avatar} className="testimonial-img" alt="" />
+                  {/* <img src={data.avatar} className="testimonial-img" alt="" /> */}
                   <h3>{data.name}</h3>
                   <h4>{data.designation}</h4>
                   <p>

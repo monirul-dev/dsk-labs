@@ -33,7 +33,7 @@ export default function Skills() {
       <div className="container">
         <div className="section-title">
           <h2>Our Skills</h2>
-          <p>Check our Our Skills</p>
+          <p>Check Our Core Skills</p>
         </div>
         <Waypoint onEnter={progressAnimation}>
           <div className="row skills-content">

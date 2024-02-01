@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# App Support
+--------------------------------------------------------------*/
+.app_support h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.app_support h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+.app_support ul {
+  list-style: none;
+  padding: 0;
+}
+.app_support ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+.app_support ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #d9232d;
+}
+.app_support p:last-child {
+  margin-bottom: 0;
+}

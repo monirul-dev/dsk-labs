@@ -5,7 +5,7 @@
   },
   {
     "name": "Blog",
-    "status": "true"
+    "status": "false"
   },
   {
     "name": "Contact",
@@ -21,7 +21,7 @@
   },
   {
     "name": "Pricing",
-    "status": "true"
+    "status": "false"
   },
   {
     "name": "Services",
@@ -33,6 +33,50 @@
   },
   {
     "name": "Testimonials",
+    "status": "true"
+  },
+  {
+    "name": "DatabaseSolutions",
+    "status": "true"
+  },
+  {
+    "name": "DotnetSolutions",
+    "status": "true"
+  },
+  {
+    "name": "PowerPlatform",
+    "status": "true"
+  },
+  {
+    "name": "AppSupport",
+    "status": "true"
+  },
+  {
+    "name": "DotnetSolutions",
+    "status": "true"
+  },
+  {
+    "name": "MultiCloudDeployment",
+    "status": "true"
+  },
+  {
+    "name": "CloudStrategy",
+    "status": "true"
+  },
+  {
+    "name": "InfrastructureFoundation",
+    "status": "true"
+  },
+  {
+    "name": "CloudSecurity",
+    "status": "true"
+  },
+  {
+    "name": "CloudMigration",
+    "status": "true"
+  },
+  {
+    "name": "Ocr",
     "status": "true"
   }
 ]

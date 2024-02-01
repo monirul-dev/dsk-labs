@@ -2,31 +2,34 @@
 # Services
 --------------------------------------------------------------*/
 .icon_box {
-    background-color: #f8f9fa;
-    margin-bottom: 20px;
-    padding: 30px;
-    border-radius: 6px;
-  }
-  .icon_box i {
-    float: left;
-    color: #d9232d;
-    font-size: 40px;
-  }
-  .icon_box h4 {
-    margin-left: 70px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  .icon_box h4 a {
-    color: #556270;
-    transition: 0.3s;
-  }
-  .icon_box p {
-    margin-left: 70px;
-    line-height: 24px;
-    font-size: 14px;
-  }
-  .icon_box:hover h4 a {
-    color: #d9232d;
-  }
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 6px;
+}
+.icon_box i {
+  float: left;
+  color: #d9232d;
+  font-size: 40px;
+}
+.icon_box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.icon_box h4 a {
+  color: #556270;
+  transition: 0.3s;
+}
+.icon_box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.icon_box:hover h4 a {
+  color: #d9232d;
+}
+.cursor {
+  cursor: pointer;
+}

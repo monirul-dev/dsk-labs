@@ -35,21 +35,41 @@ export default function Footer() {
                   <strong>Email:</strong> {contact.email} <br />
                 </p>
                 <div className={`${classes.social_links} mt-3`}>
-                  <a href="twitter.com" className="twitter">
+                  {/* <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    className="twitter"
+                  >
                     <i className="bx bxl-twitter"></i>
                   </a>
-                  <a href="facebook.com" className="facebook">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    className="facebook"
+                  >
                     <i className="bx bxl-facebook"></i>
                   </a>
-                  <a href="instagram.com" className="instagram">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    className="instagram"
+                  >
                     <i className="bx bxl-instagram"></i>
                   </a>
-                  <a href="skype.com" className="google-plus">
+                  <a
+                    href="https://skype.com"
+                    target="_blank"
+                    className="google-plus"
+                  >
                     <i className="bx bxl-skype"></i>
                   </a>
-                  <a href="linkedin.com" className="linkedin">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    className="linkedin"
+                  >
                     <i className="bx bxl-linkedin"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -69,14 +89,14 @@ export default function Footer() {
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/services">Services</Link>
                 </li>
-                <li>
+                {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/terms">Terms of service</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="/privacy">Privacy policy</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -85,23 +105,23 @@ export default function Footer() {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Web Design</Link>
+                  <Link to="/database-solutions">Database Solutions</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Web Development</Link>
+                  <Link to="/dot-net-solutions">.Net Solutions</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Product Management</Link>
+                  <Link to="/iot">IOT Solutions</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Marketing</Link>
+                  <Link to="/app-support">App Support</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="">Graphic Design</Link>
+                  <Link to="/ocr-solutions">OCR Solutions</Link>
                 </li>
               </ul>
             </div>
@@ -109,8 +129,9 @@ export default function Footer() {
             <div className={`col-lg-4 col-md-6 ${classes.footer_newsletter}`}>
               <h4>Our Newsletter</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                Subscribe to our newsletter and stay updated with the latest
+                news, exclusive offers, and exciting updates. Enter your email
+                below to join our community!"
               </p>
               <form>
                 <input type="email" name="email" />
@@ -125,13 +146,13 @@ export default function Footer() {
         <div className={classes.copyright}>
           &copy; Copyright{" "}
           <strong>
-            <span>Sailor</span>
+            <span>DSK Labs</span>
           </strong>
           . All Rights Reserved
         </div>
-        <div className={classes.credits}>
+        {/* <div className={classes.credits}>
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -1,3 +1,6 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import toast from "react-hot-toast";
 import useFetch from "../../hooks/useFetch";
 import classes from "./ContactInfo.module.css";
 
@@ -15,6 +18,32 @@ export default function ContactInfo() {
     phone: "",
     email: "",
   });
+
+  const form = useRef();
+
+  const sendEmail = (e: HTMLFormElement) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1u0mx8n",
+        "template_5jf5kkp",
+        // @ts-ignore
+        form.current,
+        "PjaO0bYfg75v1xKWJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Your message has been sent. Thank you!");
+        },
+        (error) => {
+          console.error(error.text);
+          toast.success("Error sending your message. Please try again!");
+        }
+      );
+  };
+
   return (
     <section className="contact">
       <div className="container">
@@ -52,7 +81,13 @@ export default function ContactInfo() {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form className={classes.email_form}>
+            <form
+              className={classes.email_form}
+              // @ts-ignore
+              ref={form}
+              // @ts-ignore
+              onSubmit={sendEmail}
+            >
               <div className="row">
                 <div className="col-md-6 form-group">
                   <input
@@ -98,7 +133,7 @@ export default function ContactInfo() {
                 </div>
               </div>
               <div className="text-center">
-                <button type="button">Send Message</button>
+                <button type="submit">Send Message</button>
               </div>
             </form>
           </div>

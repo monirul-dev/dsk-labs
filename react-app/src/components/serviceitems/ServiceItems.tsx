@@ -1,23 +1,34 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./ServiceItems.module.css";
+import Modal from "./modal/modal";
 
 interface IService {
   id: string;
   iconClassName: string;
   heading: string;
   description: string;
+  url: string;
+  children: [Object];
 }
 
 interface IServices extends Array<IService> {}
 
 export default function ServiceItems() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalData, setModalData] = useState([{}]);
+
+  const navigate = useNavigate();
+
   const services = useFetch<IServices>("./data/services.json", [
     {
       id: "",
       iconClassName: "",
       heading: "",
       description: "",
+      url: "",
+      children: [{}],
     },
   ]);
 
@@ -27,7 +38,16 @@ export default function ServiceItems() {
         <div className="row">
           {services?.map((data) => {
             return (
-              <div className="col-md-6" key={data.id}>
+              <div
+                onClick={() => {
+                  if (data?.children?.length > 0) {
+                    setShowModal(true);
+                    setModalData(data?.children);
+                  } else navigate(data?.url);
+                }}
+                className={`col-md-6 ${classes.cursor}`}
+                key={data.id}
+              >
                 <div className={`${classes.icon_box}`}>
                   <i className={data.iconClassName}></i>
                   <h4>
@@ -40,6 +60,12 @@ export default function ServiceItems() {
           })}
         </div>
       </div>
+
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        modalData={modalData}
+      />
     </section>
   );
 }

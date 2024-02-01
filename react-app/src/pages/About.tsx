@@ -13,7 +13,7 @@ export default function About() {
         <div className="container">
           <div className="section-title">
             <h2>Team</h2>
-            <p>Our Hardowrking Team</p>
+            <p>Our Hardworking Team</p>
           </div>
           <TeamMembers />
         </div>
